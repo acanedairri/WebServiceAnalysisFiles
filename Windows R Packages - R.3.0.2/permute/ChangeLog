@@ -1,0 +1,116 @@
+$Date: 2012-04-04 21:14:12 +0100 (Wed, 04 Apr 2012) $
+
+permute ChangeLog
+
+Version 0.7-0
+
+	* Vignette: silly typo is example code illustrating shuffle().
+	New section on `shuffleSet()`.
+
+	The Vignette is now in `vignettes` not `inst/doc`.
+
+	* check.Rd: undo the hack needed to pass checks prior to
+	vegan 2.0 being on CRAN.
+
+	* Suggests: now needs vegan >= 2.0-0
+
+	* shuffleGrid: was doing random flipping of permutations even
+	if `mirror = FALSE` for the `constant = TRUE` case.
+
+	* shuffleStrata: assumed that the samples were in contiguous
+	blocks. Reported by Cajo ter Braak.
+
+	* .Internal: removed all instances of .Internal calls in the
+	code.
+
+	* Package is now byte-compiled.
+
+Version 0.6-1 (released to CRAN on September 7, 2011)
+
+	* NAMESPACE: export(permuplot)
+
+	* check.Rd: temporarily supress some of the examples to run
+	only on vegan >= 2.0-0. Needed during transition to pass
+	checks on CRAN until version 2.0-0 is released.
+
+Version 0.6-0 (closed September 7, 2011)
+
+	* allPerms: added warning regarding current need for samples
+	to be arranged in order of any strata.
+
+	* Release: Pushed to CRAN. First beta release.
+
+Version 0.5-4 (opened August 31, 2011)
+
+	* permCheck: deprecate `permCheck()` in favour of `check()`.
+
+	* allPerms: code clean-up
+
+	* preparing for first release to CRAN.
+
+Version 0.5-3 (closed August 31, 2011)
+
+	* shuffleSet: now handles all permutation types that are
+	available in shuffle().
+
+	* nobs.Rd: fixed an example which created a numeric vector of
+	zeros instead of changing sampled vector to numeric. The example
+	yielded an error in R 2.14.0 (under development) where only one
+	argument was accepted for numeric() and two or more args cause an
+	error. The two isTRUE() cases should be true only exceptionally,
+	and may call for a fix.
+
+	* NAMESPACE, nobs-methods.R: The package relied on import(stats,
+	nobs), but that works only in R 2.13 and failed in R 2.12.2. Now
+	we define and export nobs() generic in permute package for older
+	R. The help file still gives a warning for missing documentation
+	of nobs in R 2.12.2 and prior, but there is no obvious fix to
+	this.
+
+Version 0.5-2 (closed August 23, 2011)
+
+	* shuffelSet: new function to generate a set of `n`
+	permutations without the overhead of `n` repeated calls to
+	`shuffle()`. Currently only for designs without
+	strata/blocks.
+
+Version 0.5-1 (closed July 5, 2011)
+
+	* shuffle: now returns seq_len(n) for no permutation within
+	blocks or of blocks.
+
+	* tests: testing using the `testthat` package. Initial
+	infrasctructure.
+
+Version 0.5-0 (closed June 28, 2011)
+
+	* shuffle: renamed permuted.index() to shuffle()
+	* Vignette: the package has a vignette, which is very much
+	a work-in-progress.
+
+Version 0.0-3 (closed June 17, 2011)
+
+	* NAMESPACE: permute gets a NAMESPACE. Needed to shield
+	functions form ones of similar name in vegan.
+
+Version 0.0-2 (closed December 09, 2010)
+
+	* allPerms: Large update. allPerms now works for all
+	permutation designs *except* when permuting both blocks
+	and within blocks. This exception is handled with
+	.NotYetImplemented().
+
+	* numPerms: Wasn't returning the correct number of
+	permutations when WITHIN == "none" and BLOCK != "none",
+	i.e. permuting strata.
+
+	* Utils: Utility functions defined inline within allPerms
+	moved to new proper functions and renamed; allFree, allSeries
+	allGrid, allStrata.
+
+Version 0.0-1 (closed February 28, 2010)
+
+	* SVN: Uploaded code to r-forge within vegan source tree.
+	This code base represents my working version as of today,
+	*not* the version in vegan at that time.
+

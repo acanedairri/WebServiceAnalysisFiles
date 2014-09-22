@@ -1,0 +1,14 @@
+lmerTest-package	lmerTest-package
+anova,ANY-method	anova-methods
+anova,merModLmerTest-method	anova-methods
+carrots	carrots
+difflsmeans	difflsmeans
+ham	ham
+lmer	lmer
+lmerTest	lmerTest-package
+lsmeans	lsmeans
+merModLmerTest-class	merModLmerTest-class
+rand	rand
+step	step
+summary,merModLmerTest-method	summary-methods
+TVbo	TVbo

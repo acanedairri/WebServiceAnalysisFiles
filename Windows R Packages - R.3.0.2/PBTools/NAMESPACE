@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+
+import(lme4)
+import(qtl)

@@ -1,0 +1,15 @@
+allFree                 Utility functions for complete enumeration of
+                        all possible permutations
+allPerms                Complete enumeration of all possible
+                        permutations
+check                   Utility functions for permutation schemes
+jackal                  Mandible lengths of male and female golden
+                        jackals
+nobs-methods            Number of observations in a given object
+numPerms                Number of possible permutations for a given
+                        object
+shuffle                 Unrestricted and restricted permutations
+shuffle-utils           Utility functions for unrestricted and
+                        restricted permutations
+shuffleSet              Generate a set of permutations from the
+                        specified design.

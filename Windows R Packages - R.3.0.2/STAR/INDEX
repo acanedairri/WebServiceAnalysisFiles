@@ -1,0 +1,206 @@
+AOVTest                 Analysis of Variance
+AggregateData           Aggregate Data
+AgroData1               AgroData1
+AgroData2               AgroData2
+AppendData              Append Data
+AugLS                   AugLS
+AugRCB                  AugRCB
+BIBDTest                Balanced Incomplete Block Design
+BivariateCorrelationTest
+                        Test of Association between two variables
+BoxsMTest               Box M Test
+CarbonStock             CarbonStock
+ClassInformation        Class Information
+ClusterAgglo            Agglomerative Hierarchical Cluster Analysis
+ClusterDivisive         Divisive Hierarchical Cluster Analysis
+ClusterKmeans           K-means Cluster Analysis
+CochranBIB              Balanced incomplete block design in corn
+CombineFactorLevels     Combine Factor Levels
+CompareMeans            t-Test
+CompareMedian           title1
+CompareProportion       Compare Proportion
+ConstructAOVTable       Construct the ANOVA Table
+ContingencyCoef         title1
+ContrastCompute         Constrast Compute
+Corr                    Corr
+CramersV                title1
+CropStatRCBDOverSite    RCBD Over Site
+Crosstab                title1
+DataAttribute           Dataset Attribute
+DataTransformation      title1
+DescriptiveStatistics   Descriptive Statistics
+Discriminant            Discriminant
+Dule_AlphaGxE           Dule_AlphaGxE
+Dune                    Dune
+FactorList              title1
+Fertilizer              Fertilizer
+FitDistrib              Fit Distribution
+FoldedFTest             FoldedFTest
+FriedmanTest            Friedman Test
+GenerateBalanceData     title1
+GenerateFactor          title1
+GeneticDistMatrix       fishData
+Gerua                   Gerua
+GomezMaizeCross         Maize Cross
+GomezMaizeCrossSummary
+                        GomezMaizeCrossSummary
+GomezSplit2RCBD         GomezSplit2RCBD
+GomezSplitRCBD          GomezSplitRCBD
+GomezStrip              GomezStrip
+GomezStripSplit         GomezStripSplit
+GomezTenureStatus       GomezTenureStatus
+GomezTwoCropSeasonRCB   GomezTwoCropSeasonRCB
+GoodnessOfFitTest       Chi-Square Goodness of Fit Test
+GraphBar                GraphBar
+GraphBoxplot            Graph Boxplot
+GraphHist               Histogram
+GraphLine               GraphLine
+GraphPie                GraphPie
+GraphScatter            GraphScatter
+HSD.test                Multiple comparisons: Tukey
+Heatmap                 Heatmap
+HeteroskedasticityTest
+                        title1
+IASRIBIBD               Balanced Incomplete Block Design
+IASRICluster            Cluster Analysis
+IASRICorrReg            IASRICorrReg
+IASRILSD                IASRILSD
+IASRITomar              IASRITomar
+IASRITomar2             IASRITomar2
+IASRIpca                Principal Component
+InjuryProfile           InjuryProfile
+Inoculation             Inoculation
+Insecticides            Insecticides
+JohnAlpha               JohnAlpha
+KemptonRowCol           KemptonRowCol
+KijojiDS2010Cluster     KijojiDS2010Cluster
+KruskalWallisTest       title1
+LSD.test                Multiple comparisons, "Least significant
+                        difference" and Adjust P-values
+LikelihoodRatioTest     title1
+LinearRegressionAnalysis
+                        title1
+LinearRegressionSelection
+                        LinearRegressionSelection
+MAOVTest                MANOVA Test
+MDS                     MDS
+Maize                   Maize
+ManovaData1             ManovaData1
+MergeData               Merge Dataset
+NonLinearRegression     Non-Linear Regeression
+NormalityTest           Test for Normality
+Nurul2012               Nurul2012
+OP_pss                  OP_pss
+PCA                     Principal Component Analysis
+PCAgraph                Graphs for PCA
+PGTYPIC                 PGTYPIC
+PhiCoef                 title1
+PredictedValues         title1
+SNK.test                Student-Newman-Keuls (SNK)
+STAR-package            Statistical Tools for Agricultural Research
+SeedingRate             Seeding Rate
+Sensors                 Sensors
+Sevilla2012Cluster      Sevilla2012Cluster
+SignificantEffect       title1
+SortCases               SortCases
+Survival                Survival
+ToLong                  title1
+ToWide                  title1
+White_heads             White_heads
+Year                    Year
+Yield94                 Yield
+ad.test                 Anderson-Darling test for normality
+allFactors              allFactors
+allPossibleReg          All Possible Regression
+bcPower                 Box-Cox and Yeo-Johnson Power Transformations
+bptest                  Breusch-Pagan Test
+buildAOVModel           buildAOVModel
+coef                    title1
+combAOVTest             Combined Analysis of Variance
+confint2                confint2
+css                     Corrected Sum of Squares
+cv                      Coefficient of Variation
+cvm.test                Cramer-von Mises test for normality
+data.Normalization      Data Normalization
+design.alpha            Alpha design type (0,1)
+designAlphaLattice      Alpha Lattice
+designAugmentedLSD      Augmented Design for Latin Square
+designAugmentedRCB      Augmented Design for Randomized Complete Block
+designBIBD              Randomization of Balanced Incomplete Block
+                        Design
+designCRD               Randomization of Completely Randomized Design
+designLSD               title1
+designLatinizedAlpha    Latinized Alpha Design
+designLatinizedRowCol   Latinized Row-Column
+designLattice           Randomization for Lattice Design
+designRCBD              Randomization for Randomized Complete Block
+                        Design
+designRowColumn         design Row-Column
+designSplit             Randomization of Family of Split Plot Design
+designStrip             title1
+duncan.test             Duncan's new multiple range test
+durbinWatsonTest        Durbin-Watson Test for Autocorrelated Errors
+estMissData             SAMPLE TITLE
+estimateTransform       Finding Univariate or Multivariate Power
+                        Transformations
+fishData                fishData
+getVarInfo              title1
+ginv                    Generalized Inverse of a Matrix
+gqtest                  Goldfeld-Quandt Test
+grp_pss                 grp_pss
+is.valid.name           valid names
+is.wholenumber          Wholenumber
+kurtosis                Coefficient of Kurtosis
+lastC                   Setting the last character of a chain
+lda                     Linear Discriminant Analysis
+ldahist                 Histograms or Density Plots of Multiple Groups
+leveneTest              Levene's Test
+lillie.test             Lilliefors (Kolmogorov-Smirnov) test for
+                        normality
+make.contrasts          make contrast
+mdsGraph                mdsGraph
+modalValue              Modal Value
+mshapiro.test           multivariate Shapiro
+order.group             Ordering the treatments according to the
+                        multiple comparison
+pairs.lda               Produce Pairwise Scatterplots from an 'lda' Fit
+pairwiseAmong           t
+pairwiseComparison      pwtitle
+pairwiseWithin          a
+plot.lda                Plot Method for Class 'lda'
+plot.powerTransform     plot Method for powerTransform Objects
+plotDiscDist            plotDiscDist
+powerTransform          Finding Univariate or Multivariate Power
+                        Transformations
+predict.lda             Classify Multivariate Observations by Linear
+                        Discrimination
+prelimCombAOV           prelimCombAOV
+print.powerTransform    print
+printAOVTable           title1
+printBIBDPairwise       Print BIBD Pairwise
+printCorrMatrix         Print Correlation Matrix
+printDataFrame          Print Data Frames
+printLayout             print layout
+printTable              print Table
+randomizeLattice        title1
+scheffe.test            Multiple comparisons, scheffe
+sf.test                 Shapiro-Francia test for normality
+skewness                Coefficient of Skewness
+soil_redox              soil_redox
+soil_var                soil_var
+ssa.pairwise            ssa.pairwise
+ssaTest                 Single Environment Analysis
+stdkurtosis             Standard Error of Kurtosis
+stdmean                 Standard Error of the Mean
+stdskewness             Standard Error of Skewness
+summary.powerTransform
+                        title1
+tapply.stat             Statistics of data grouped by factors
+testTransform           Likelihood-Ratio Tests for Univariate or
+                        Multivariate Power Transformations to Normality
+tf_rcb                  tf_rcb
+trimStrings             title1
+ucss                    Uncorrected Sum of Squares
+upland                  upland
+vcov.powerTransform     title1
+vif                     Variance Inflation Factors

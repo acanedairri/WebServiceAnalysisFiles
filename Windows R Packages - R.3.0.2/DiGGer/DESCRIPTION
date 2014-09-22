@@ -1,0 +1,15 @@
+Package: DiGGer
+Version: 0.2-31
+Type: Package
+Date: 2011-06-09
+Title: DiGGer design generator under correlation and blocking
+Author: Neil Coombes <neil.coombes@dpi.nsw.gov.au>
+Maintainer: Neil Coombes <neil.coombes@dpi.nsw.gov.au>
+Depends: R.oo, R.methodsS3, MASS
+Description: DiGGer searches for A-efficient experimental designs under
+             specified blocking and correlation.
+LazyLoad: yes
+License: NSW DPI Freeware Licence
+URL: http://www.austatgen.org/files/software/downloads
+Built: R 3.0.1; i386-w64-mingw32; 2013-05-28 02:15:26 UTC; windows
+Archs: i386, x64

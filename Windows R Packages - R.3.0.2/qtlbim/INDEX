@@ -1,0 +1,61 @@
+Bnapus                  Cross structure for complete Brassica napus
+                        data
+covar.mean              Internal qtlbim routines
+fisch                   Eight QTL Stephens and Fisch simulated data
+plot.qb                 Diagnostics plots for Bayesian interval mapping
+plot.qb.diag            Marginal and model-conditional summaries of
+                        Bayesian interval mapping diagnostics
+plot.qb.epistasis       Density Plots for Models Showing Epistasis and
+                        GxE Interactions.
+plot.qb.loci            Jittered plot of Bayesian QTL loci samples by
+                        chromosome
+plot.qb.mainmodes       Summaries of QTL modes by chromosome.
+plot.qb.pairloci        Summaries of epistatic pairs of loci.
+plot.qb.scanone         Plot or print qb.scanone object.
+plot.qb.scantwo         Two dimensional LOD Plot of Epistasis/joint
+qb.BayesFactor          Bayesian model selection via Bayes factors.
+qb.BestPattern          Proximity of common genetic architecture
+                        patterns.
+qb.arch                 Build genetic architecture with chromosomes,
+                        positions and epistatic pairs.
+qb.close                Measures closeness of genetic architectures to
+                        target.
+qb.coda                 Coerce to an MCMC object for use with the coda
+                        package.
+qb.confound             Examine confounding of covariate with
+                        pseudomarkers.
+qb.covar                Examine GxE effect of covariates on main
+                        genetic effects.
+qb.data                 Prepares data for qb.mcmc
+qb.genoprob             Grid point and genotype probability computation
+                        method
+qb.hpdchr               Find highest probability density (HPD) region
+                        by Chromosome.
+qb.hpdone               Highest probability density (HPD) region.
+qb.mcmc                 Bayesian Mutiple Interacting QTL mapping using
+                        MCMC
+qb.meancomp             Examine grand mean and covariate MCMC samples.
+qb.model                Set up interacting QTL model for qb.mcmc
+qb.multloci             Summaries of multiple loci on a chromosome.
+qb.remove               Legacy update, remove or recover of qb object
+                        and associated MCMC samples
+qb.scanone              Genome Scan for Main Loci Involved in
+                        Phenotypic Trait
+qb.scantwo              Genome Scan for Pairs of Loci Involved in
+                        Phenotypic Trait
+qb.sim.cross            Simulates QTL related data for an F2 or BC
+                        cross.
+qb.sliceone             Genome Slice to detect QTL for Phenotypic Trait
+qb.slicetwo             Slices for epistatic pairs.
+qb.sweave               Run sweave to automate QTL search with MCMC
+                        samples.
+qb.varcomp              Variance components for Bayesian multiple QTL
+qbExample               MCMC sample for fake BC example
+qbHyper                 MCMC samples for hyper dataset from R/qtl
+qbSim                   MCMC samples used in scan.pdf document
+step.fitqtl             Stepwise backward elimination and anova
+                        comparison.
+subset.qb               Subsetting Bayesian interval mapping data
+summary.qb.scanone      Summary of qb.scanone or qb.scantwo object.
+vern                    Eight week vernalization data for Brassica
+                        napus

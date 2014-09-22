@@ -1,0 +1,103 @@
+Block                   DiGGer Block object constructor.
+Correlation             DiGGer Correlation object constructor.
+DiGGer                  Constructor function for a DiGGer design
+                        search.
+DiGGer-package          DiGGer experimental design generator.
+Objective               Constructor function for a DiGGer Objective.
+Phase                   DiGGer Phase object constructor function.
+addBlock                Add a block to an objective in a DiGGer object.
+addObjective            Add an Objective to a DiGGer search.
+addPhase                Add a Phase object to a DiGGer search.
+deleteBlock             Delete a Block from an objective in a DiGGer
+                        search
+deleteObjective         Delete an Objective from a DiGGer search
+deletePhase             Delete a Phase from a Digger search.
+des.embedopr01          Function to generate an embedded p-rep design
+des.ib01                Function for an Incomplete Block Design Search
+des.plot                Plot a design as a matrix
+des.prep00              Function to generate a DiGGer search for a
+                        p-rep design
+des.split00             Function to produce Split-plot designs
+des.strip00             Function to produce a strip-plot design
+des.tab                 Tabulate replication levels of treatments in a
+                        block.
+errcodes                DiGGer error message texts.
+findblks                Generate block codes.
+get.dups                Get the vector of duplicated treatments.
+getAType                Get the A-efficiency code in a DiGGer search
+                        phase
+getBlock                Get a Block object from a DiGGer search object.
+getConcurrence.DiGGer   Get a Treatment-Block or Block-Treatment
+                        concurrence table summary.
+getCorrelation          Get a Correlation object from a DiGGer search.
+getCorrelationBlock     Show the dimensions of a correlation block in a
+                        DiGGer search.
+getDesign               Get the matrix of design numbers from a DiGGer
+                        search.
+getDesignLayout         Get the layout dimensions of a DiGGer design.
+getError                Get an error message from a DiGGer object.
+getInitialDesign        Get the initial design used in a DiGGer search.
+getIntermediateDesign   Get the design from a DiGGer search phase.
+getLinearCovariate      Get the linear covariate from a DiGGer
+                        objective.
+getMaxInterchanges      Get the maximum treatment interchanges for a
+                        DiGGer search phase.
+getNumberOfBlocks       Get the number of block factors in a DiGGer
+                        objective
+getNumberOfObjectives   Get the number of objectives in a DiGGer search
+                        phase.
+getNumberOfSearchPhases
+                        Get the number of search phases in a DiGGer
+                        search.
+getNumberOfTreatments   Get the number of treatments in a DiGGer
+                        search.
+getObjective            Get an objective from a DiGGer search.
+getObjectiveWeight      Get the weight used for a DiGGer objective.
+getPhase                Get a Phase object from a DiGGer search.
+getReplicateLayout      Get the dimensions of a DiGGer replicate.
+getSearchIntensity      Get the search intensity in a DiGGer search
+                        phase.
+getSeeds                Get the initial Random Number Generator seeds.
+getSwapBlock            Get swap block dimensions in a DiGGer search
+                        phase.
+getTargetAValue         Get the target A-measure for a DiGGer search
+                        phase.
+getTreatmentVarianceRatio
+                        Get the treatment variance ratio from a DiGGer
+                        search.
+getidsgn                Generate an initial design for a DiGGer search.
+indi                    Form an indicator matrix.
+plot.DiGGer             Plot DiGGer design labels.
+ppage                   View an object using page.
+print.Block             Print a Block object.
+print.Correlation       Print a DiGGer Correlation object.
+print.DiGGer            Print a DiGGer search object.
+print.Objective         Print a DiGGer Objective
+print.Phase             Print a DiGGer Phase.
+printDiGGer.DiGGer      Print a DiGGer input file.
+run                     Run a DiGGer search.
+setAType                Set the type of A-Measure for a DiGGer search
+                        phase.
+setBlock                Modify the parameters for a Block object.
+setCorrelation          Modify a Correlation object in a DiGGer search.
+setCorrelationBlock     Set the template for blocks of correlated
+                        error.
+setInitialDesign        Set an Initial Design for a DiGGer search.
+setLinearCovariate      Set the Linear Covariate in a DiGGer search
+                        objective.
+setMaxInterchanges      Set the maximum number of treatment
+                        interchanges in a DiGGer search Phase.
+setObjective            Set an Objective to optimise in a DiGGer search
+setObjectiveWeight      Set the scaling weight for a DiGGer Objective.
+setPhase                Modify a DiGGer search Phase.
+setSearchIntensity      Set the Search Intensity for a DiGGer search
+                        phase.
+setSeeds                Set the Random Number Generator Seeds for a
+                        DiGGer search.
+setSwapBlock            Set the template for the swap blocks in a
+                        DiGGer search Phase.
+setTargetAValue         Set the target A-value.
+setTreatmentVarianceRatio
+                        Set the treatment variance ratio.
+summary                 Summarise the DiGGer search.
+ttab                    Produce a table of frequencies in an object.

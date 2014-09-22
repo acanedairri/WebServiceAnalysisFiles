@@ -1,0 +1,37 @@
+### Visible functions:
+export(`allPerms`, `Blocks`, `numPerms`, `check`, `permCheck`,
+       `permControl`, `permute`, `shuffle`, `Within`,
+       `shuffleFree`, `shuffleSeries`, `shuffleGrid`, `shuffleStrata`,
+       `getBlocks`, `getWithin`, `getStrata`,
+       `shuffleSet`, `permuplot`)
+
+### Imports: nobs() only exists in R 2.13.0 for import. We define the
+### same nobs() generic in permute for export in older R.
+if (getRversion() >= "2.13.0") {
+    importFrom(`stats`, `nobs`)
+} else {
+    export(nobs)
+}
+
+### S3 Methods
+## print methods
+S3method(`print`, `allPerms`)
+S3method(`print`, `check`)
+S3method(`print`, `permControl`)
+S3method(`print`, `summary.allPerms`)
+S3method(`print`, `summary.check`)
+## summary methods
+S3method(`summary`, `allPerms`)
+S3method(`summary`, `check`)
+## nobs() methods
+S3method(`nobs`, `numeric`)
+S3method(`nobs`, `integer`)
+S3method(`nobs`, `matrix`)
+S3method(`nobs`, `data.frame`)
+## getFoo methods
+S3method(`getBlocks`, `default`)
+S3method(`getBlocks`, `permControl`)
+S3method(`getWithin`, `default`)
+S3method(`getWithin`, `permControl`)
+S3method(`getStrata`, `default`)
+S3method(`getStrata`, `permControl`)

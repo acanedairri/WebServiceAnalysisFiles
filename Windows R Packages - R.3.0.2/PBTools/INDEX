@@ -1,0 +1,165 @@
+AMMI.contour            AMMI contour
+ANOVA                   ANOVA
+Adjcovs                 Adjcovs
+AggregateData           Aggregate Data
+AppendData              Append Data
+BivariateCorrelationTest
+                        Test of Association between two variables
+ConstructAOVTable       Construct the ANOVA Table
+ConstructVarCorrTable   Construct Var-Corr Table
+CovMol                  CovMol
+DataAttribute           Dataset Attribute
+DescriptiveStatistics   Descriptive Statistics
+ESIMIndex_2             ESIMIndex_2
+FactorList              title1
+GEOneStage.test         GEOneStage.test
+GEOneStage_resid        GEOneStage_resid
+GETwoStage.dataRecode   GETwoStage.dataRecode
+GETwoStage.test         GETwoStage.test
+GETwoStage_resid        GETwoStage_resid
+GenerateFactor          title1
+GraphLine               GraphLine
+Heatmap                 Heatmap
+KNIndex_2               KNIndex_2
+LTIndex_2               LTIndex_2
+LinearRegressionAnalysis
+                        title1
+LinearRegressionSelection
+                        LinearRegressionSelection
+MESIMIndex_2            MESIMIndex_2
+MQ.marker.diag          MQ.marker.diag
+Means                   Means
+MergeData               Merge Dataset
+NonLinearRegression     Non-Linear Regeression
+NormalityTest           Test for Normality
+OutlierDetection        Outlier Detection
+PBTools-package         Plant Breeding Tools
+QTL.analysis            QTL.analysis
+QTL.dataprep            QTL.dataprep
+QTLDataPrep             QTLDataPrep
+RCB_Multi               RCB_Multi
+RESIMIndex_2            RESIMIndex_2
+Read                    Read
+ReadMarkers             ReadMarkers
+ReadQTL                 ReadQTL
+Readrest                Readrest
+Readsgn                 Readsgn
+Readwgt                 Readwgt
+SmithIndex_2            SmithIndex_2
+SortCases               SortCases
+Stan                    Stan
+ToLong                  title1
+ToWide                  title1
+TraitsSelect            TraitsSelect
+Two_stage               Two_stage
+ad.test                 Anderson-Darling test for normality
+adjmeans                adjmeans
+adjustAnovaDf           adjusts the error df of Anova Table
+allFactors              allFactors
+allPossibleReg          All Possible Regression
+ammi.analysis           ammi.analysis
+ammi.analysis2          ammi.analysis2
+bptest                  Breusch-Pagan Test
+checkGenoError          checkGenoError
+checkMarkerOrder        checkMarkerOrder
+checkQTLdata            checkQTLdata
+class.information       class.information
+compareGenotypes        compareGenotypes
+confint2                confint2
+contrastAnalysis        Contrast Analysis
+contrastCompute         Contrast analysis utilities
+createQTLdata           createQTLdata
+css                     Corrected Sum of Squares
+cv                      Coefficient of Variation
+cvm.test                Cramer-von Mises test for normality
+designAlphaLattice      Alpha Lattice
+designAugmentedLSD      Augmented Design for Latin Square
+designAugmentedRCB      Augmented Design for Randomized Complete Block
+designLSD               title1
+designLatinizedAlpha    Latinized Alpha Design
+designLatinizedRowCol   Latinized Row-Column
+designRCBD              Randomization for Randomized Complete Block
+                        Design
+designRowColumn         design Row-Column
+diallel1Test            diallel1Test
+diallel1TestME          diallel1TestME
+diallel2Test            diallel2Test
+diallel2TestME          diallel2TestME
+diallel3Test            diallel3Test
+diallel3TestME          diallel3TestME
+diallel4Test            diallel4Test
+diallel4TestME          diallel4TestME
+doIM                    doIM
+doQTL_BIM               doQTL_BIM
+doQTL_CIM               doQTL_CIM
+doQTL_CIM2              QTL Analysis
+doQTL_MQM               doQTL_MQM
+doQTLanalysis           doQTLanalysis
+durbinWatsonTest        Durbin-Watson Test for Autocorrelated Errors
+estimateMissingData     estimateMissingData
+estimateNA              estimateNA
+fCovariances            fCovariances
+fac.gen                 fac.gen
+factor.list             factor.list
+formatAnovaTable        format Anova Table
+formatNumericValue      format Numeric Value
+gCovariances            gCovariances
+generateBalancedData    generateBalancedData
+generationMean.test     generationMean.test
+generationMeanSummaryStats.test
+                        generationMeanSummaryStats.test
+genoNpheno.corr         genoNpheno.corr
+getDefaultGenesContrast
+                        getDefaultGenesContrast
+getVarInfo              title1
+gge.analysis            gge.analysis
+gge.analysis2           gge.analysis2
+gqtest                  Goldfeld-Quandt Test
+graph.mea1s.boxhist     graph.mea1s.boxhist
+graph.mea1s.diagplots   graph.mea1s.diagplots
+graph.mea1s.predint     graph.mea1s.predint
+graph.mea2s.boxhist     graph.mea2s.boxhist
+graph.mea2s.diagplots   graph.mea2s.diagplots
+graph.mea2s.predint     graph.mea2s.predint
+graph.sea.boxhist       graph.sea.boxhist
+graph.sea.diagplots     graph.sea.diagplots
+is.valid.name           valid names
+is.wholenumber          Wholenumber
+isContrast              Is Contrast?
+isOrthogonal            Is Orthogonal
+kurtosis                Coefficient of Kurtosis
+lillie.test             Lilliefors (Kolmogorov-Smirnov) test for
+                        normality
+load.cross.data         load.cross.data
+manageQTLmissing        manageQTLmissing
+modalValue              Modal Value
+modelComparisonTable    Model Comparison Table
+multiplicativeModels    multiplicativeModels
+nc1Test                 nc1Test
+nc1TestME               nc1TestME
+nc2Test                 nc2Test
+nc2TestME               nc2TestME
+nc3Test                 nc3Test
+nc3TestME               nc3TestME
+printAOVTable           title1
+printCorrMatrix         Print Correlation Matrix
+printDataFrame          Print Data Frames
+printLayout             print layout
+recodeDiallelData       recode diallel data
+runBackwardRegression   runBackwardRegression
+sf.test                 Shapiro-Francia test for normality
+skewness                Coefficient of Skewness
+ssa.pairwise            ssa.pairwise
+ssa.resid               ssa.resid
+ssa.test                ssa.test
+stability.analysis      stability.analysis
+stabilityTest           stabilityTest
+stdkurtosis             Standard Error of Kurtosis
+stdmean                 Standard Error of the Mean
+stdskewness             Standard Error of Skewness
+testQTLsegregation      testQTLsegregation
+trimStrings             trimStrings
+ttcTest                 ttcTest
+ttcTestME               ttcTestME
+ucss                    Uncorrected Sum of Squares
+vif                     Variance Inflation Factors

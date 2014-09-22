@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: vegan News</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for NEWS"><tr><td>NEWS</td><td align="right">R Documentation</td></tr></table>
+
+<h2>vegan News</h2>
+
+<h3>Changes in version 2.0-6</h3>
+
+
+
+<h4>BUG FIXES</h4>
+
+
+<ul>
+<li><p> The species scores were scaled wrongly in
+<code>capscale()</code>. They were scaled correctly only when Euclidean
+distances were used, but usually <code>capscale()</code> is used with
+non-Euclidean distances.  Most graphics will change and should be
+redone.  The change of scaling mainly influences the spread of
+species scores with respect to the site scores.
+</p>
+</li>
+<li><p> Function <code>clamtest()</code> failed to set the minimum
+abundance threshold in some cases. In addition, the output was
+wrong when some of the possible species groups were missing. Both
+problems were reported by Richard Telford (Bergen, Norway).
+</p>
+</li>
+<li><p> Plotting an object fitted by <code>envfit()</code> would fail if
+<code>p.max</code> was used and there were unused levels for one or
+more factors. The unused levels could result from deletion of
+observations with missing values or simply as the result of
+supplying a subset of a larger data set to <code>envfit()</code>.
+</p>
+</li>
+<li> <p><code>multipart()</code> printed wrong information about the
+analysis type (but did the analysis correctly). Reported by
+Valerie Coudrain.
+</p>
+</li>
+<li> <p><code>oecosimu()</code> failed if its <code>nestedfun</code> returned a
+data frame. A more fundamental fix will be in <span class="pkg">vegan</span> 2.2-0,
+where the structure of the <code>oecosimu()</code> result will change.
+</p>
+</li>
+<li><p> The plot of two-dimensional <code>procrustes()</code> solutions
+often draw original axes in a wrong angle. The problem was
+reported by Elizabeth Ottesen (MIT).
+</p>
+</li>
+<li><p> Function <code>treedive()</code> for functional or phylogenetic
+diversity did not correctly match the species names between the
+community data and species tree when the tree contained species
+that did not occur in the data.  Related function
+<code>treedist()</code> for phylogenetic distances did not try to match
+the names at all.
+</p>
+</li></ul>
+
+ 
+
+
+<h4>NEW FEATURES</h4>
+
+
+<ul>
+<li><p> The output of <code>capscale()</code> displays the value of the
+additive constant when argument <code>add = TRUE</code> was used.
+</p>
+</li>
+<li> <p><code>fitted()</code> functions for <code>cca()</code>, <code>rda()</code> and
+<code>capscale()</code> can now return conditioned (partial) component
+of the response: Argument <code>model</code> gained a new alternative
+<code>model = "pCCA"</code>. 
+</p>
+</li>
+<li> <p><code>dispindmorisita()</code> output gained a new column for
+Chi-squared based probabilities that the null hypothesis (random
+distribution) is true.
+</p>
+</li>
+<li> <p><code>metaMDS()</code> and <code>monoMDS()</code> have new default
+convergence criteria. Most importantly, scale factor of the
+gradient (<code>sfgrmin</code>) is stricter. The former limit was too
+slack with large data sets and iterations stopped early without
+getting close to the solution. In addition, <code>scores()</code>
+ignore now requests to dimensions beyond those calculated
+instead of failing, and <code>scores()</code> for <code>metaMDS()</code>
+results do not drop dimensions.
+</p>
+</li>
+<li> <p><code>msoplot()</code> gained <code>legend</code> argument for
+positioning the legend.
+</p>
+</li>
+<li><p> Nestedness function <code>nestednodf()</code> gained a <code>plot</code>
+method.
+</p>
+</li>
+<li> <p><code>ordiR2step()</code> gained new argument <code>R2scope</code>
+(defaults <code>TRUE</code>) which can be used to turn off the criterion
+of stopping when the adjusted <i>R-squared</i> of the current
+model exceeds that of the scope.  This option allows model
+building when the <code>scope</code> would be overdetermined (number of
+predictors higher than number of observations).
+</p>
+<p><code>ordiR2step()</code> now handles partial redundancy analysis
+(pRDA).
+</p>
+</li>
+<li> <p><code>orditorp()</code> gained argument <code>select</code> to select
+the rows or columns of the results to display.
+</p>
+</li>
+<li> <p><code>protest()</code> prints the standardized residual statistic
+<i>squared m12</i> in addition to the squared Procrustes
+correlation <i>R-squared</i>.  Both were calculated, but only
+the latter was displayed.
+</p>
+<p>Permutation tests are much faster in <code>protest()</code>. Instead
+of calling repeatedly <code>procrustes()</code>, the goodness of fit
+statistic is evaluated within the function. 
+</p>
+</li>
+<li> <p><code>wcmdscale()</code> gained methods for <code>print</code>,
+<code>plot</code> etc. of the results. These methods are only used if
+the full <code>wcmdscale</code> result is returned with, e.g., argument
+<code>eig = TRUE</code>. The default is still to return only a matrix of
+scores similarly as the standard <font face="Courier New,Courier" color="#666666"><b>R</b></font> function <code>cmdscale()</code>,
+and in that case the new methods are not used.
+</p>
+</li></ul>
+
+ 
+
+
+<h3>Changes in version 2.0-5</h3>
+
+
+
+<h4>BUG FIXES</h4>
+
+
+<ul>
+<li> <p><code>anova(&lt;cca_object&gt;, ...)</code> failed with
+<code>by = "axis"</code> and <code>by = "term"</code>. The bug was reported by
+Dr Sven Neulinger (Christian Albrecht University, Kiel, Germany).
+</p>
+</li>
+<li> <p><code>radlattice</code> did not honour argument <code>BIC = TRUE</code>,
+but always displayed AIC.
+</p>
+</li></ul>
+
+ 
+
+
+<h4>NEW FUNCTIONS</h4>
+
+
+<ul>
+<li><p> Most <span class="pkg">vegan</span> functions with permutation tests have now a
+<code>density</code> method that can be used to find empirical
+probability distributions of permutations. There is a new
+<code>plot</code> method for these functions that displays both the
+density and the observed statistic. The <code>density</code> function is
+available for <code>adonis</code>, <code>anosim</code>, <code>mantel</code>,
+<code>mantel.partial</code>, <code>mrpp</code>, <code>permutest.cca</code> and
+<code>procrustes</code>.
+</p>
+<p>Function <code>adonis</code> can return several statistics, and it has
+now a <code>densityplot</code> method (based on <span class="pkg">lattice</span>).
+</p>
+<p>Function <code>oecosimu</code> already had <code>density</code> and
+<code>densityplot</code>, but they are now similar to other <span class="pkg">vegan</span>
+methods, and also work with <code>adipart</code>, <code>hiersimu</code> and
+<code>multipart</code>.
+</p>
+</li>
+<li> <p><code>radfit</code> functions got a <code>predict</code> method that
+also accepts arguments <code>newdata</code> and <code>total</code> for new
+ranks and site totals for prediction.  The functions can also
+interpolate to non-integer &ldquo;ranks&rdquo;, and in some models
+also extrapolate.
+</p>
+</li></ul>
+
+ 
+
+
+<h4>NEW FEATURES</h4>
+
+
+<ul>
+<li><p> Labels can now be set in the <code>plot</code> of <code>envfit</code>
+results. The labels must be given in the same order that the
+function uses internally, and new support function <code>labels</code>
+can be used to display the default labels in their correct order.
+</p>
+</li>
+<li><p> Mantel tests (functions <code>mantel</code> and
+<code>mantel.partial</code>) gained argument <code>na.rm</code> which can be
+used to remove missing values. This options should be used with
+care: Permutation tests can be biased if the missing values were
+originally in matching or fixed positions.
+</p>
+</li>
+<li> <p><code>radfit</code> results can be consistently accessed with
+the same methods whether they were a single model for a single
+site, all models for a single site or all models for all sites
+in the data.  All functions now have methods <code>AIC</code>,
+<code>coef</code>, <code>deviance</code>, <code>logLik</code>, <code>fitted</code>,
+<code>predict</code> and <code>residuals</code>.
+</p>
+</li></ul>
+
+ 
+
+
+<h4>INSTALLATION AND BUILDING</h4>
+
+
+<ul>
+<li><p> Building of <span class="pkg">vegan</span> vignettes failed with the latest
+version of LaTeX (TeXLive 2012).
+</p>
+</li>
+<li> <p><font face="Courier New,Courier" color="#666666"><b>R</b></font> versions later than 2.15-1 (including development
+version) report warnings and errors when installing and checking
+<span class="pkg">vegan</span>, and you must upgrade <span class="pkg">vegan</span> to this version.
+The warnings concern functions <code>cIndexKM</code> and
+<code>betadisper</code>, and the error occurs in <code>betadisper</code>.
+These errors and warnings were triggered by internal changes in
+<font face="Courier New,Courier" color="#666666"><b>R</b></font>.
+</p>
+</li></ul>
+
+ 
+
+
+<h3>Changes in version 2.0-4</h3>
+
+
+
+<h4>BUG FIXES</h4>
+
+
+<ul>
+<li> <p><code>adipart</code> assumed constant gamma diversity in
+simulations when assessing the <i>P</i>-value.  This could give
+biased results if the null model produces variable gamma
+diversities and option <code>weights = "prop"</code> is used.  The
+default null model (<code>"r2dtable"</code>) and the default option
+(<code>weights = "unif"</code>) were analysed correctly.
+</p>
+</li>
+<li> <p><code>anova(&lt;prc-object&gt;, by = "axis")</code> and other
+<code>by</code> cases failed due to &lsquo;<span class="file">NAMESPACE</span>&rsquo; issues.
+</p>
+</li>
+<li> <p><code>clamtest</code> wrongly used frequencies instead of the
+counts when calculating sample coverage.  No detectable
+differences were produced when rerunning examples from Chazdon
+et al. 2011 and <span class="pkg">vegan</span> help page.
+</p>
+</li>
+<li> <p><code>envfit</code> failed with unused factor levels.
+</p>
+</li>
+<li> <p><code>predict</code> for <code>cca</code> results with
+<code>type = "response"</code> or <code>type = "working"</code> failed with
+<code>newdata</code> if the number of rows did not match with the
+original data.  Now the <code>newdata</code> is ignored if it has a
+wrong number of rows.  The number of rows must match because
+the results in <code>cca</code> must be weighted by original row
+totals.  The problem did not concern <code>rda</code> or
+<code>capscale</code> results which do not need row weights.
+Reported by Glenn De'ath.
+</p>
+</li></ul>
+
+
+
+
+<h4>NEW FEATURES</h4>
+
+
+<ul>
+<li><p> Functions for diversity partitioning (<code>adipart</code>,
+<code>hiersimu</code> and <code>multipart</code>) have now <code>formula</code>
+and <code>default</code> methods.  The <code>formula</code> method is
+identical to the previous functions, but the <code>default</code>
+method can take two matrices as input. 
+</p>
+<p>Functions <code>adipart</code> and <code>multipart</code> can be used for
+fast and easy overall partitioning to alpha, beta and gamma
+diversities by omitting the argument describing the hierarchy.
+</p>
+</li>
+<li><p> The method in <code>betadisper</code> is biased with small
+sample sizes.  The effects of the bias are strongest with
+unequal sample sizes. A bias adjusted version was developed by
+Adrian Stier and Ben Bolker, and can be invoked with argument
+<code>bias.adjust</code> (defaults to <code>FALSE</code>).
+</p>
+</li>
+<li> <p><code>bioenv</code> accepts dissimilarities (or square matrices
+that can be interpreted as dissimilarities) as an alternative to
+community data.  This allows using other dissimilarities than
+those available in <code>vegdist</code>.
+</p>
+</li>
+<li> <p><code>plot</code> function for <code>envfit</code> results gained new
+argument <code>bg</code> that can be used to set background colour for
+plotted labels.
+</p>
+</li>
+<li> <p><code>msoplot</code> is more configurable, and allows, for
+instance, setting y-axis limits.
+</p>
+</li>
+<li><p> Hulls and ellipses are now filled using semitransparent
+colours in <code>ordihull</code> and <code>ordiellipse</code>, and the
+user can set the degree of transparency with a new argument
+<code>alpha</code>.  The filled shapes are used when these functions
+are called with argument <code>draw = "polygon"</code>.  Function
+<code>ordihull</code> puts labels (with argument <code>label = TRUE</code>)
+now in the real polygon centre.
+</p>
+</li>
+<li> <p><code>ordiplot3d</code> returns function <code>envfit.convert</code>
+and the projected location of the <code>origin</code>.  Together
+these can be used to add <code>envfit</code> results to existing
+<code>ordiplot3d</code> plots.
+</p>
+<p>Equal aspect ratio cannot be set exactly in <code>ordiplot3d</code>
+because underlying core routines do not allow this. Now
+<code>ordiplot3d</code> sets equal axis ranges, and the documents
+urge users to verify that the aspect ratio is reasonably equal
+and the graph looks like a cube.  If the problems cannot be
+solved in the future, <code>ordiplot3d</code> may be removed from
+next releases of <span class="pkg">vegan</span>.
+</p>
+</li>
+<li><p> Function <code>ordipointlabel</code> gained argument to
+<code>select</code> only some of the items for plotting. The
+argument can be used only with one set of points.
+</p>
+</li></ul>
+
+ 
+
+
+<h3>Changes in version 2.0-3</h3>
+
+
+
+<h4>NEW FUNCTIONS</h4>
+
+
+<ul>
+<li><p> Added new nestedness functions <code>nestedbetasor</code> and
+<code>nestedbetajac</code> that implement multiple-site dissimilarity
+indices and their decomposition into turnover and nestedness
+components following Baselga (<EM>Global Ecology and
+Biogeography</EM> 19, 134&ndash;143; 2010).
+</p>
+</li>
+<li><p> Added function <code>rarecurve</code> to draw rarefaction curves
+for each row (sampling unit) of the input data, optionally with
+lines showing rarefied species richness with given sample size
+for each curve.
+</p>
+</li>
+<li><p> Added function <code>simper</code> that implements
+&ldquo;similarity percentages&rdquo; of Clarke (<EM>Australian
+Journal of Ecology</EM> 18, 117&ndash;143; 1993).  The method compares
+two or more groups and decomposes the average between-group
+Bray-Curtis dissimilarity index to contributions by individual
+species.  The code was developed in 
+<a href="https://github.com/jarioksa/vegan">GitHub</a>
+by Eduard Szöcs (Uni Landau, Germany).
+</p>
+</li></ul>
+
+ 
+
+
+<h4>BUG FIXES</h4>
+
+
+<ul>
+<li> <p><code>betadisper()</code> failed when the <code>groups</code> was a
+factor with empty levels.
+</p>
+</li>
+<li><p> Some constrained ordination methods and their support
+functions are more robust in border cases (completely aliased
+effects, saturated models, user requests for non-existng scores
+etc). Concerns <code>capscale</code>, <code>ordistep</code>, <code>varpart</code>,
+<code>plot</code> function for constrained ordination, and
+<code>anova(&lt;cca.object&gt;, by = "margin")</code>.
+</p>
+</li>
+<li><p> The <code>scores</code> function for <code>monoMDS</code> did not
+honour <code>choices</code> argument and hence dimensions could not be
+chosen in <code>plot</code>.
+</p>
+</li>
+<li><p> The default <code>scores</code> method failed if the number of
+requested axes was higher than the ordination object had.  This
+was reported as an error in <code>ordiplot</code> in
+<a href="https://stat.ethz.ch/pipermail/r-sig-ecology/2012-February/002768.html">R-sig-ecology</a> mailing list.
+</p>
+</li></ul>
+
+ 
+
+
+<h4>NEW FEATURES</h4>
+
+
+<ul>
+<li> <p><code>metaMDS</code> argument <code>noshare = 0</code> is now
+regarded as a numeric threshold that always triggers extended
+dissimilarities (<code>stepacross</code>), instead of being treated
+as synonymous with <code>noshare = FALSE</code> which always
+suppresses extended dissimilarities.
+</p>
+</li>
+<li><p> Nestedness discrepancy index <code>nesteddisc</code> gained a
+new argument that allows user to set the number of iterations
+in optimizing the index.
+</p>
+</li>
+<li> <p><code>oecosimu</code> displays the mean of simulations and
+describes alternative hypothesis more clearly in the printed
+output. 
+</p>
+</li>
+<li><p> Implemented adjusted <i>R-squared</i> for partial
+RDA. For partial model <code>rda(Y ~ X1 + Condition(X2))</code> this
+is the same as the component <code>[a] = X1|X2</code> in variance
+partition in <code>varpart</code> and describes the marginal (unique)
+effect of constraining term to adjusted <i>R-squared</i>.
+</p>
+</li>
+<li><p> Added Cao dissimilarity (CYd) as a new dissimilarity
+method in <code>vegdist</code> following Cao et al., <EM>Water
+Envir Res</EM> 69, 95&ndash;106 (1997). The index should be good for
+data with high beta diversity and variable sampling
+intensity. Thanks to consultation to Yong Cao (Univ Illinois,
+USA).
+</p>
+</li></ul>
+
+ 
+
+
+<h3>Changes in version 2.0-2</h3>
+
+
+
+<h4>BUG FIXES</h4>
+
+
+<ul>
+<li><p> Function <code>capscale</code> failed if constrained component
+had zero rank. This happened most likely in partial models when
+the conditions aliased constraints. The problem was observed in
+<code>anova(..., by ="margin")</code> which uses partial models to
+analyses the marginal effects, and was reported in an email
+message to
+<a href="https://stat.ethz.ch/pipermail/r-help/2011-October/293077.html">R-News
+mailing list</a>.
+</p>
+</li>
+<li> <p><code>stressplot</code> and <code>goodness</code> sometimes failed when
+<code>metaMDS</code> was based on <code>isoMDS</code> (<span class="pkg">MASS</span> package)
+because <code>metaMDSdist</code> did not use the same defaults for
+step-across (extended) dissimilarities as
+<code>metaMDS(..., engine = "isoMDS")</code>. The change of defaults can
+also influence triggering of step-across in
+<code>capscale(..., metaMDSdist = TRUE)</code>.
+</p>
+</li>
+<li> <p><code>adonis</code> contained a minor bug resulting from
+incomplete implementation of a speed-up that did not affect the
+results. In fixing this bug, a further bug was identified in
+transposing the hat matrices. This second bug was only active
+following fixing of the first bug. In fixing both bugs, a
+speed-up in the internal f.test() function is fully
+realised. Reported by Nicholas Lewin-Koh.
+</p>
+</li></ul>
+
+  
+
+
+<h4>NEW FEATURES</h4>
+
+
+<ul>
+<li> <p><code>ordiarrows</code> and <code>ordisegments</code> gained argument
+<code>order.by</code> that gives a variable to sort points within
+<code>groups</code>. Earlier the points were assumed to be in order.
+</p>
+</li>
+<li><p> Function <code>ordispider</code> invisibly returns the
+coordinates to which the points were connected.  Typically these
+are class centroids of each point, but for constrained ordination
+with no <code>groups</code> they are the LC scores.
+</p>
+</li></ul>
+		 
+  
+
+
+<h3>Changes in version 2.0-1</h3>
+
+
+
+<h4>NEW FUNCTIONS</h4>
+
+
+<ul>
+<li> <p><code>clamtest</code>: new function to classify species as
+generalists and specialists in two distinct habitats (CLAM test of
+Chazdon et al., <EM>Ecology</EM> 92, 1332&ndash;1343; 2011).  The test is
+based on multinomial distribution of individuals in two habitat
+types or sampling units, and it is applicable only to count data
+with no over-dispersion.
+</p>
+</li>
+<li> <p><code>as.preston</code> gained <code>plot</code> and <code>lines</code>
+methods, and <code>as.fisher</code> gained <code>plot</code> method (which
+also can add items to existing plots). These are similar as
+<code>plot</code> and <code>lines</code> for <code>prestonfit</code> and
+<code>fisherfit</code>, but display only data without the fitted lines.
+</p>
+</li>
+<li> <p><code>raupcrick</code>: new function to implement Raup-Crick
+dissimilarity as a probability of number of co-occurring species
+with occurrence probabilities proportional to species
+frequencies.  <span class="pkg">Vegan</span> has Raup-Crick index as a choice in
+<code>vegdist</code>, but that uses equal sampling probabilities for
+species and analytic equations. The new <code>raupcrick</code>
+function uses simulation with <code>oecosimu</code>. The function
+follows Chase et al. (2011) <EM>Ecosphere</EM> 2:art24
+[<a href="http://www.esajournals.org/doi/abs/10.1890/ES10-00117.1">doi:10.1890/ES10-00117.1</a>],
+and was developed with the consultation of Brian Inouye.
+</p>
+</li></ul>
+
+ 
+
+
+<h4>BUG FIXES</h4>
+
+
+<ul>
+<li><p> Function <code>meandist</code> could scramble items and give
+wrong results, especially when the <code>grouping</code> was
+numerical. The problem was reported by Dr Miguel Alvarez
+(Univ. Bonn).
+</p>
+</li>
+<li> <p><code>metaMDS</code> did not reset <code>tries</code> when a new model
+was started with a <code>previous.best</code> solution from a different
+model. 
+</p>
+</li>
+<li><p> Function <code>permatswap</code> for community null models using
+quantitative swap never swapped items in a <i>2 by 2</i>
+submatrix if all cells were filled.
+</p>
+</li>
+<li><p> The result from <code>permutest.cca</code> could not be
+<code>update</code>d because of a &lsquo;<span class="file">NAMESPACE</span>&rsquo; issue.
+</p>
+</li>
+<li> <p><font face="Courier New,Courier" color="#666666"><b>R</b></font> 2.14.0 changed so that it does not accept using
+<code>sd()</code> function for matrices (which was the behaviour at
+least since <font face="Courier New,Courier" color="#666666"><b>R</b></font> 1.0-0), and several <span class="pkg">vegan</span> functions were
+changed to adapt to this change (<code>rda</code>, <code>capscale</code>,
+<code>simulate</code> methods for <code>rda</code>, <code>cca</code> and
+<code>capscale</code>). The change in <font face="Courier New,Courier" color="#666666"><b>R</b></font> 2.14.0 does not influence the
+results but you probably wish to upgrade <span class="pkg">vegan</span> to avoid
+annoying warnings.
+</p>
+</li></ul>
+	
+ 
+
+
+<h4>ANALYSES</h4>
+
+
+<ul>
+<li> <p><code>nesteddisc</code> is slacker and hence faster when trying
+to optimize the statistic for tied column frequencies. Tracing
+showed that in most cases an improved ordering was found rather
+early in tries, and the results are equally good in most cases.
+</p>
+</li></ul>
+
+ 
+
+
+<h3>Changes in version 2.0-0</h3>
+
+
+
+<h4>GENERAL</h4>
+
+
+<ul>
+<li><p> Peter Minchin joins the <span class="pkg">vegan</span> team.
+</p>
+</li>
+<li> <p><span class="pkg">vegan</span> implements standard <font face="Courier New,Courier" color="#666666"><b>R</b></font> &lsquo;<span class="file">NAMESPACE</span>&rsquo;. In
+general, <code>S3</code> methods are not exported which means that you
+cannot directly use or see contents of functions like
+<code>cca.default</code>, <code>plot.cca</code> or <code>anova.ccabyterm</code>. To
+use these functions you should rely on <font face="Courier New,Courier" color="#666666"><b>R</b></font> delegation and simply
+use <code>cca</code> and for its result objects use <code>plot</code> and
+<code>anova</code> without suffix <code>.cca</code>. To see the contents of
+the function you can use <code>:::</code>, such as
+<code>vegan:::cca.default</code>. This change may break packages,
+documents or scripts that rely on non-exported names.
+</p>
+</li>
+<li> <p><span class="pkg">vegan</span> depends on the <span class="pkg">permute</span> package. This
+package provides powerful tools for restricted permutation
+schemes. All <span class="pkg">vegan</span> permutation will gradually move to use
+<span class="pkg">permute</span>, but currently only <code>betadisper</code> uses the new
+feature. 
+</p>
+</li></ul>
+
+ 
+
+
+<h4>NEW FUNCTIONS</h4>
+
+
+<ul>
+<li> <p><code>monoMDS</code>: a new function for non-metric
+multidimensional scaling (NMDS). This function replaces
+<code>MASS::isoMDS</code> as the default method in
+<code>metaMDS</code>. Major advantages of <code>monoMDS</code> are that it
+has &lsquo;weak&rsquo; (&lsquo;primary&rsquo;) tie treatment which means
+that it can split tied observed dissimilarities.  &lsquo;Weak&rsquo;
+tie treatment improves ordination of heterogeneous data sets,
+because maximum dissimilarities of <i>1</i> can be split. In
+addition to global NMDS, <code>monoMDS</code> can perform local and
+hybrid NMDS and metric MDS.  It can also handle missing and zero
+dissimilarities.  Moreover, <code>monoMDS</code> is faster than
+previous alternatives. The function uses <code>Fortran</code> code
+written by Peter Minchin.
+</p>
+</li>
+<li> <p><code>MDSrotate</code> a new function to replace
+<code>metaMDSrotate</code>. This function can rotate both <code>metaMDS</code>
+and <code>monoMDS</code> results so that the first axis is parallel to
+an environmental vector.
+</p>
+</li>
+<li> <p><code>eventstar</code> finds the minimum of the evenness profile
+on the Tsallis entropy, and uses this to find the corresponding
+values of diversity, evenness and numbers equivalent following
+Mendes et al. (<EM>Ecography</EM> 31, 450-456; 2008). The code was
+contributed by Eduardo Ribeira Cunha and Heloisa Beatriz Antoniazi
+Evangelista and adapted to <span class="pkg">vegan</span> by Peter Solymos.
+</p>
+</li>
+<li> <p><code>fitspecaccum</code> fits non-linear regression models to
+the species accumulation results from <code>specaccum</code>. The
+function can use new self-starting species accumulation models
+in <span class="pkg">vegan</span> or other self-starting non-linear regression
+models in <font face="Courier New,Courier" color="#666666"><b>R</b></font>. The function can fit Arrhenius, Gleason, Gitay,
+Lomolino (in <span class="pkg">vegan</span>), asymptotic, Gompertz,
+Michaelis-Menten, logistic and Weibull (in base <font face="Courier New,Courier" color="#666666"><b>R</b></font>) models. The
+function has <code>plot</code> and <code>predict</code> methods.
+</p>
+</li>
+<li><p> Self-starting non-linear species accumulation models
+<code>SSarrhenius</code>, <code>SSgleason</code>, <code>SSgitay</code> and
+<code>SSlomolino</code>. These can be used with <code>fitspecaccum</code> or
+directly in non-linear regression with <code>nls</code>. These functions
+were implemented because they were found good for species-area
+models by Dengler (<EM>J. Biogeogr.</EM> 36, 728-744; 2009).
+</p>
+</li></ul>
+
+ 
+
+
+<h4>NEW FEATURES</h4>
+
+
+<ul>
+<li> <p><code>adonis</code>, <code>anosim</code>, <code>meandist</code> and
+<code>mrpp</code> warn on negative dissimilarities, and
+<code>betadisper</code> refuses to analyse them. All these functions
+expect dissimilarities, and giving something else (like
+correlations) probably is a user error.
+</p>
+</li>
+<li> <p><code>betadisper</code> uses restricted permutation of the
+<span class="pkg">permute</span> package. 
+</p>
+</li>
+<li> <p><code>metaMDS</code> uses <code>monoMDS</code> as its default ordination
+engine. Function gains new argument <code>engine</code> that can be used
+to alternatively select <code>MASS::isoMDS</code>.  The default is not
+to use <code>stepacross</code> with <code>monoMDS</code> because its
+&lsquo;weak&rsquo; tie treatment can cope with tied maximum
+dissimilarities of one. However, <code>stepacross</code> is the default
+with <code>isoMDS</code> because it cannot handle adequately these tied
+maximum dissimilarities.
+</p>
+</li>
+<li> <p><code>specaccum</code> gained <code>predict</code> method which uses
+either linear or spline interpolation for data between observed
+points. Extrapolation is possible with spline interpolation, but
+may make little sense.
+</p>
+</li>
+<li> <p><code>specpool</code> can handle missing values or empty factor
+levels in the grouping factor <code>pool</code>.  Now also checks that
+the length of the <code>pool</code> matches the number of
+observations.
+</p>
+</li></ul>
+
+ 
+
+
+<h4>DEPRECATED AND DEFUNCT</h4>
+
+
+<ul>
+<li> <p><code>metaMDSrotate</code> was replaced with <code>MDSrotate</code>
+that can also handle the results of <code>monoMDS</code>.
+</p>
+</li>
+<li> <p><code>permuted.index2</code> and other &ldquo;new&rdquo; permutation
+code was removed in favour of the <span class="pkg">permute</span> package. This code
+was not intended for normal use, but packages depending on that
+code in <span class="pkg">vegan</span> should instead depend on <span class="pkg">permute</span>.
+</p>
+</li></ul>
+  
+ 
+
+
+<h4>ANALYSES</h4>
+
+
+<ul>
+<li> <p><code>treeheight</code> uses much snappier code. The results
+should be unchanged.
+</p>
+</li></ul>
+
+ 
+
+
+</body></html>

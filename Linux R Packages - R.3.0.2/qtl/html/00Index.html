@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Tools for analyzing QTL experiments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+<h1> Tools for analyzing QTL experiments
+<img class="toplogo" src="../../../doc/html/logo.jpg" alt="[R logo]">
+</h1>
+<hr>
+<div align="center">
+<a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
+<a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
+</div><h2>Documentation for package &lsquo;qtl&rsquo; version 1.33-7</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p align="center">
+<a href="# "> </a>
+<a href="#A">A</a>
+<a href="#B">B</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<a href="#E">E</a>
+<a href="#F">F</a>
+<a href="#G">G</a>
+<a href="#H">H</a>
+<a href="#I">I</a>
+<a href="#J">J</a>
+<a href="#L">L</a>
+<a href="#M">M</a>
+<a href="#N">N</a>
+<a href="#O">O</a>
+<a href="#P">P</a>
+<a href="#Q">Q</a>
+<a href="#R">R</a>
+<a href="#S">S</a>
+<a href="#T">T</a>
+<a href="#W">W</a>
+<a href="#X">X</a>
+<a href="#misc">misc</a>
+</p>
+
+<table width="100%">
+<tr><td width="25%"><a href="a.starting.point.html">qtl-package</a></td>
+<td>Introductory comments on R/qtl</td></tr>
+</table>
+
+<h2><a name="A">-- A --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="add.cim.covar.html">add.cim.covar</a></td>
+<td>Indicate marker covariates from composite interval mapping</td></tr>
+<tr><td width="25%"><a href="add.threshold.html">add.threshold</a></td>
+<td>Add significance threshold to plot</td></tr>
+<tr><td width="25%"><a href="addcovarint.html">addcovarint</a></td>
+<td>Add QTL x covariate interaction to a multiple-QTL model</td></tr>
+<tr><td width="25%"><a href="addint.html">addint</a></td>
+<td>Add pairwise interaction to a multiple-QTL model</td></tr>
+<tr><td width="25%"><a href="addloctocross.html">addloctocross</a></td>
+<td>Add phenotype location into a cross object</td></tr>
+<tr><td width="25%"><a href="addmarker.html">addmarker</a></td>
+<td>Add a marker to a cross</td></tr>
+<tr><td width="25%"><a href="addpair.html">addpair</a></td>
+<td>Scan for an additional pair of QTL in a multiple-QTL model</td></tr>
+<tr><td width="25%"><a href="addqtl.html">addqtl</a></td>
+<td>Scan for an additional QTL in a multiple-QTL model</td></tr>
+<tr><td width="25%"><a href="addtoqtl.html">addtoqtl</a></td>
+<td>Add to a qtl object</td></tr>
+<tr><td width="25%"><a href="allchrsplits.html">allchrsplits</a></td>
+<td>Test all possible splits of a chromosome into two pieces</td></tr>
+<tr><td width="25%"><a href="argmax.geno.html">argmax.geno</a></td>
+<td>Reconstruct underlying genotypes</td></tr>
+</table>
+
+<h2><a name="B">-- B --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="badorder.html">badorder</a></td>
+<td>An intercross with misplaced markers</td></tr>
+<tr><td width="25%"><a href="bayesint.html">bayesint</a></td>
+<td>Bayesian credible interval</td></tr>
+<tr><td width="25%"><a href="bristle3.html">bristle3</a></td>
+<td>Data on bristle number in Drosophila</td></tr>
+<tr><td width="25%"><a href="bristleX.html">bristleX</a></td>
+<td>Data on bristle number in Drosophila</td></tr>
+</table>
+
+<h2><a name="C">-- C --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="c.cross.html">c.cross</a></td>
+<td>Combine data for QTL experiments</td></tr>
+<tr><td width="25%"><a href="c.scanone.html">c.scanone</a></td>
+<td>Combine columns from multiple scanone results</td></tr>
+<tr><td width="25%"><a href="c.scanoneperm.html">c.scanoneperm</a></td>
+<td>Combine data from scanone permutations</td></tr>
+<tr><td width="25%"><a href="c.scantwo.html">c.scantwo</a></td>
+<td>Combine columns from multiple scantwo results</td></tr>
+<tr><td width="25%"><a href="c.scantwoperm.html">c.scantwoperm</a></td>
+<td>Combine data from scantwo permutations</td></tr>
+<tr><td width="25%"><a href="calc.errorlod.html">calc.errorlod</a></td>
+<td>Identify likely genotyping errors</td></tr>
+<tr><td width="25%"><a href="calc.genoprob.html">calc.genoprob</a></td>
+<td>Calculate conditional genotype probabilities</td></tr>
+<tr><td width="25%"><a href="calc.penalties.html">calc.penalties</a></td>
+<td>Calculate LOD penalties</td></tr>
+<tr><td width="25%"><a href="c.scanone.html">cbind.scanone</a></td>
+<td>Combine columns from multiple scanone results</td></tr>
+<tr><td width="25%"><a href="cbind.scanoneperm.html">cbind.scanoneperm</a></td>
+<td>Combine columns from multiple scanone permutation results</td></tr>
+<tr><td width="25%"><a href="c.scantwo.html">cbind.scantwo</a></td>
+<td>Combine columns from multiple scantwo results</td></tr>
+<tr><td width="25%"><a href="checkAlleles.html">checkAlleles</a></td>
+<td>Identify markers with switched alleles</td></tr>
+<tr><td width="25%"><a href="chrlen.html">chrlen</a></td>
+<td>Chromosome lengths in QTL experiment</td></tr>
+<tr><td width="25%"><a href="chrnames.html">chrnames</a></td>
+<td>Pull out the chromosome names from a cross</td></tr>
+<tr><td width="25%"><a href="cim.html">cim</a></td>
+<td>Composite interval mapping</td></tr>
+<tr><td width="25%"><a href="clean.cross.html">clean.cross</a></td>
+<td>Remove derived data</td></tr>
+<tr><td width="25%"><a href="clean.scantwo.html">clean.scantwo</a></td>
+<td>Clean up scantwo output</td></tr>
+<tr><td width="25%"><a href="cleanGeno.html">cleanGeno</a></td>
+<td>Delete genotypes that are possibly in error</td></tr>
+<tr><td width="25%"><a href="comparecrosses.html">comparecrosses</a></td>
+<td>Compare two cross objects</td></tr>
+<tr><td width="25%"><a href="comparegeno.html">comparegeno</a></td>
+<td>Compare individuals' genotype data</td></tr>
+<tr><td width="25%"><a href="compareorder.html">compareorder</a></td>
+<td>Compare two orderings of markers on a chromosome</td></tr>
+<tr><td width="25%"><a href="condense.scantwo.html">condense.scantwo</a></td>
+<td>Condense the output from a 2-d genome scan</td></tr>
+<tr><td width="25%"><a href="convert.map.html">convert.map</a></td>
+<td>Change map function for a genetic map</td></tr>
+<tr><td width="25%"><a href="convert.scanone.html">convert.scanone</a></td>
+<td>Convert output from scanone for R/qtl version 0.98</td></tr>
+<tr><td width="25%"><a href="convert.scantwo.html">convert.scantwo</a></td>
+<td>Convert output from scantwo for R/qtl version 1.03 and earlier</td></tr>
+<tr><td width="25%"><a href="convert2riself.html">convert2riself</a></td>
+<td>Convert a cross to RIL by selfing</td></tr>
+<tr><td width="25%"><a href="convert2risib.html">convert2risib</a></td>
+<td>Convert a cross to RIL by sib mating</td></tr>
+<tr><td width="25%"><a href="convert2sa.html">convert2sa</a></td>
+<td>Convert a sex-specific map to a sex-averaged one</td></tr>
+<tr><td width="25%"><a href="countXO.html">countXO</a></td>
+<td>Count number of obligate crossovers for each individual</td></tr>
+</table>
+
+<h2><a name="D">-- D --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="drop.dupmarkers.html">drop.dupmarkers</a></td>
+<td>Drop duplicate markers</td></tr>
+<tr><td width="25%"><a href="drop.markers.html">drop.markers</a></td>
+<td>Drop a set of markers</td></tr>
+<tr><td width="25%"><a href="drop.nullmarkers.html">drop.nullmarkers</a></td>
+<td>Drop markers without any genotype data</td></tr>
+<tr><td width="25%"><a href="dropfromqtl.html">dropfromqtl</a></td>
+<td>Drop a QTL from a qtl object</td></tr>
+<tr><td width="25%"><a href="droponemarker.html">droponemarker</a></td>
+<td>Drop one marker at a time and determine effect on genetic map</td></tr>
+</table>
+
+<h2><a name="E">-- E --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="effectplot.html">effectplot</a></td>
+<td>Plot phenotype means against genotypes at one or two markers</td></tr>
+<tr><td width="25%"><a href="effectscan.html">effectscan</a></td>
+<td>Plot estimated QTL effects across the whole genome</td></tr>
+<tr><td width="25%"><a href="est.map.html">est.map</a></td>
+<td>Estimate genetic maps</td></tr>
+<tr><td width="25%"><a href="est.rf.html">est.rf</a></td>
+<td>Estimate pairwise recombination fractions</td></tr>
+</table>
+
+<h2><a name="F">-- F --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="fake.4way.html">fake.4way</a></td>
+<td>Simulated data for a 4-way cross</td></tr>
+<tr><td width="25%"><a href="fake.bc.html">fake.bc</a></td>
+<td>Simulated data for a backcross</td></tr>
+<tr><td width="25%"><a href="fake.f2.html">fake.f2</a></td>
+<td>Simulated data for an F2 intercross</td></tr>
+<tr><td width="25%"><a href="fill.geno.html">fill.geno</a></td>
+<td>Fill holes in genotype data</td></tr>
+<tr><td width="25%"><a href="find.flanking.html">find.flanking</a></td>
+<td>Find flanking markers for a specified position</td></tr>
+<tr><td width="25%"><a href="find.marker.html">find.marker</a></td>
+<td>Find marker closest to a specified position</td></tr>
+<tr><td width="25%"><a href="findmarkerindex.html">find.markerindex</a></td>
+<td>Determine the numeric index for a marker</td></tr>
+<tr><td width="25%"><a href="find.markerpos.html">find.markerpos</a></td>
+<td>Find position of a marker</td></tr>
+<tr><td width="25%"><a href="find.pheno.html">find.pheno</a></td>
+<td>Find column number for a particular phenotype</td></tr>
+<tr><td width="25%"><a href="find.pseudomarker.html">find.pseudomarker</a></td>
+<td>Find the pseudomarker closest to a specified position</td></tr>
+<tr><td width="25%"><a href="findDupMarkers.html">findDupMarkers</a></td>
+<td>Find markers with identical genotype data</td></tr>
+<tr><td width="25%"><a href="fitqtl.html">fitqtl</a></td>
+<td>Fit a multiple-QTL model</td></tr>
+<tr><td width="25%"><a href="fitstahl.html">fitstahl</a></td>
+<td>Fit Stahl interference model</td></tr>
+<tr><td width="25%"><a href="formLinkageGroups.html">formLinkageGroups</a></td>
+<td>Partition markers into linkage groups</td></tr>
+<tr><td width="25%"><a href="formMarkerCovar.html">formMarkerCovar</a></td>
+<td>Create matrix of marker covariates for QTL analysis</td></tr>
+</table>
+
+<h2><a name="G">-- G --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="geno.crosstab.html">geno.crosstab</a></td>
+<td>Create table of two-locus genotypes</td></tr>
+<tr><td width="25%"><a href="geno.image.html">geno.image</a></td>
+<td>Plot grid of genotype data</td></tr>
+<tr><td width="25%"><a href="geno.table.html">geno.table</a></td>
+<td>Create table of genotype distributions</td></tr>
+<tr><td width="25%"><a href="getid.html">getid</a></td>
+<td>Pull out the individual identifiers from a cross</td></tr>
+<tr><td width="25%"><a href="groupclusteredheatmap.html">groupclusteredheatmap</a></td>
+<td>Retrieving groups of traits after clustering</td></tr>
+</table>
+
+<h2><a name="H">-- H --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="hyper.html">hyper</a></td>
+<td>Data on hypertension</td></tr>
+</table>
+
+<h2><a name="I">-- I --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="inferFounderHap.html">inferFounderHap</a></td>
+<td>Crude reconstruction of founder haplotypes in multi-parent RIL</td></tr>
+<tr><td width="25%"><a href="inferredpartitions.html">inferredpartitions</a></td>
+<td>Identify inferred partitions in mapping QTL to a phylogenetic tree</td></tr>
+<tr><td width="25%"><a href="interpPositions.html">interpPositions</a></td>
+<td>Interpolate positions from one map to another</td></tr>
+</table>
+
+<h2><a name="J">-- J --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="jittermap.html">jittermap</a></td>
+<td>Jitter marker positions in a genetic map</td></tr>
+</table>
+
+<h2><a name="L">-- L --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="listeria.html">listeria</a></td>
+<td>Data on Listeria monocytogenes susceptibility</td></tr>
+<tr><td width="25%"><a href="locateXO.html">locateXO</a></td>
+<td>Estimate locations of crossovers</td></tr>
+<tr><td width="25%"><a href="locations.html">locations</a></td>
+<td>Genetic locations of traits for the multitrait dataset</td></tr>
+<tr><td width="25%"><a href="lodint.html">lodint</a></td>
+<td>LOD support interval</td></tr>
+</table>
+
+<h2><a name="M">-- M --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="makeqtl.html">makeqtl</a></td>
+<td>Make a qtl object</td></tr>
+<tr><td width="25%"><a href="map10.html">map10</a></td>
+<td>An example genetic map</td></tr>
+<tr><td width="25%"><a href="mapthis.html">mapthis</a></td>
+<td>Simulated data for illustrating genetic map construction</td></tr>
+<tr><td width="25%"><a href="markerlrt.html">markerlrt</a></td>
+<td>General likelihood ratio test for association between marker pairs</td></tr>
+<tr><td width="25%"><a href="markernames.html">markernames</a></td>
+<td>Pull out the marker names from a cross</td></tr>
+<tr><td width="25%"><a href="max.scanone.html">max.scanone</a></td>
+<td>Maximum peak in genome scan</td></tr>
+<tr><td width="25%"><a href="max.scanPhyloQTL.html">max.scanPhyloQTL</a></td>
+<td>Maximum peak in genome scan to map a QTL to a phylogenetic tree</td></tr>
+<tr><td width="25%"><a href="max.scantwo.html">max.scantwo</a></td>
+<td>Maximum peak in two-dimensional genome scan</td></tr>
+<tr><td width="25%"><a href="movemarker.html">movemarker</a></td>
+<td>Move a marker to a new chromosome</td></tr>
+<tr><td width="25%"><a href="MQM.html">MQM</a></td>
+<td>Introduction to Multiple QTL Model (MQM) mapping</td></tr>
+<tr><td width="25%"><a href="mqmaugment.html">mqmaugment</a></td>
+<td>MQM augmentation</td></tr>
+<tr><td width="25%"><a href="mqmautocofactors.html">mqmautocofactors</a></td>
+<td>Automatic setting of cofactors, taking marker density into account</td></tr>
+<tr><td width="25%"><a href="mqmextractmarkers.html">mqmextractmarkers</a></td>
+<td>MQM marker extraction</td></tr>
+<tr><td width="25%"><a href="mqmfind.marker.html">mqmfind.marker</a></td>
+<td>Fetch significant markers after permutation analysis</td></tr>
+<tr><td width="25%"><a href="mqmgetmodel.html">mqmgetmodel</a></td>
+<td>Retrieve the QTL model used in mapping from the results of an MQM scan</td></tr>
+<tr><td width="25%"><a href="mqmpermutation.html">mqmpermutation</a></td>
+<td>Estimate QTL LOD score significance using permutations or simulations</td></tr>
+<tr><td width="25%"><a href="mqmplotcircle.html">mqmplot.circle</a></td>
+<td>Circular genome plot for MQM</td></tr>
+<tr><td width="25%"><a href="mqmplotcistrans.html">mqmplot.cistrans</a></td>
+<td>cis-trans plot</td></tr>
+<tr><td width="25%"><a href="mqmplotclusteredheatmap.html">mqmplot.clusteredheatmap</a></td>
+<td>Plot clustered heatmap of MQM scan on multiple phenotypes</td></tr>
+<tr><td width="25%"><a href="mqmplotcofactors.html">mqmplot.cofactors</a></td>
+<td>Plot cofactors on the genetic map</td></tr>
+<tr><td width="25%"><a href="mqmplotdirectedqtl.html">mqmplot.directedqtl</a></td>
+<td>Plot LOD*Effect curves of a multiple-QTL model</td></tr>
+<tr><td width="25%"><a href="mqmplotheatmap.html">mqmplot.heatmap</a></td>
+<td>Heatmap of a genome of MQM scan on multiple phenotypes</td></tr>
+<tr><td width="25%"><a href="mqmplotmultitrait.html">mqmplot.multitrait</a></td>
+<td>Plot the results from a genomescan using a multiple-QTL model on multiple phenotypes</td></tr>
+<tr><td width="25%"><a href="mqmplotpermutations.html">mqmplot.permutations</a></td>
+<td>Plot results from mqmpermutation</td></tr>
+<tr><td width="25%"><a href="mqmplotsingletrait.html">mqmplot.singletrait</a></td>
+<td>Plot LOD curves of a multiple-QTL model</td></tr>
+<tr><td width="25%"><a href="mqmprocesspermutation.html">mqmprocesspermutation</a></td>
+<td>Convert mqmmulti objects into a scanoneperm object</td></tr>
+<tr><td width="25%"><a href="mqmscan.html">mqmscan</a></td>
+<td>Genome scan with a multiple QTL model (MQM)</td></tr>
+<tr><td width="25%"><a href="mqmscanall.html">mqmscanall</a></td>
+<td>Parallelized MQM on multiple phenotypes in a cross object</td></tr>
+<tr><td width="25%"><a href="mqmscanfdr.html">mqmscanfdr</a></td>
+<td>Estimate FDR for multiple trait QTL analysis</td></tr>
+<tr><td width="25%"><a href="mqmsetcofactors.html">mqmsetcofactors</a></td>
+<td>Set cofactors at fixed intervals, to be used with MQM</td></tr>
+<tr><td width="25%"><a href="mqmtestnormal.html">mqmtestnormal</a></td>
+<td>Shapiro normality test used for MQM</td></tr>
+<tr><td width="25%"><a href="multitrait.html">multitrait</a></td>
+<td>Example Cross object from R/QTL with multiple traits</td></tr>
+</table>
+
+<h2><a name="N">-- N --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="nchr.html">nchr</a></td>
+<td>Determine the number of chromosomes</td></tr>
+<tr><td width="25%"><a href="nind.html">nind</a></td>
+<td>Determine the number of individuals QTL experiment</td></tr>
+<tr><td width="25%"><a href="nmar.html">nmar</a></td>
+<td>Determine the numbers of markers on each chromosome</td></tr>
+<tr><td width="25%"><a href="nmissing.html">nmissing</a></td>
+<td>Number of missing genotypes</td></tr>
+<tr><td width="25%"><a href="nphe.html">nphe</a></td>
+<td>Determine the number of phenotypes QTL experiment</td></tr>
+<tr><td width="25%"><a href="nqrank.html">nqrank</a></td>
+<td>Transform a vector of quantitative values to the corresponding normal quantiles</td></tr>
+<tr><td width="25%"><a href="nqtl.html">nqtl</a></td>
+<td>Determine the number of QTL in a QTL object</td></tr>
+<tr><td width="25%"><a href="ntyped.html">ntyped</a></td>
+<td>Number of genotypes</td></tr>
+<tr><td width="25%"><a href="nullmarkers.html">nullmarkers</a></td>
+<td>Identify markers without any genotype data</td></tr>
+</table>
+
+<h2><a name="O">-- O --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="orderMarkers.html">orderMarkers</a></td>
+<td>Find an initial order for markers within chromosomes</td></tr>
+</table>
+
+<h2><a name="P">-- P --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="phenames.html">phenames</a></td>
+<td>Pull out the phenotypes names from a cross</td></tr>
+<tr><td width="25%"><a href="pickMarkerSubset.html">pickMarkerSubset</a></td>
+<td>Identify the largest subset of markers that are some distance apart</td></tr>
+<tr><td width="25%"><a href="plot.cross.html">plot.cross</a></td>
+<td>Plot various features of a cross object</td></tr>
+<tr><td width="25%"><a href="plot.errorlod.html">plot.errorlod</a></td>
+<td>Plot grid of error LOD values</td></tr>
+<tr><td width="25%"><a href="plot.geno.html">plot.geno</a></td>
+<td>Plot observed genotypes, flagging likely errors</td></tr>
+<tr><td width="25%"><a href="plot.info.html">plot.info</a></td>
+<td>Plot the proportion of missing genotype information</td></tr>
+<tr><td width="25%"><a href="plot.map.html">plot.map</a></td>
+<td>Plot genetic map</td></tr>
+<tr><td width="25%"><a href="plot.missing.html">plot.missing</a></td>
+<td>Plot grid of missing genotypes</td></tr>
+<tr><td width="25%"><a href="plot.pheno.html">plot.pheno</a></td>
+<td>Plot a phenotype distribution</td></tr>
+<tr><td width="25%"><a href="plot.pxg.html">plot.pxg</a></td>
+<td>Plot phenotypes versus marker genotypes</td></tr>
+<tr><td width="25%"><a href="plot.qtl.html">plot.qtl</a></td>
+<td>Plot QTL locations</td></tr>
+<tr><td width="25%"><a href="plot.rf.html">plot.rf</a></td>
+<td>Plot recombination fractions</td></tr>
+<tr><td width="25%"><a href="plot.rfmatrix.html">plot.rfmatrix</a></td>
+<td>Plot recombination fractions or LOD scores for a single marker</td></tr>
+<tr><td width="25%"><a href="plot.scanone.html">plot.scanone</a></td>
+<td>Plot LOD curves</td></tr>
+<tr><td width="25%"><a href="plot.scanoneboot.html">plot.scanoneboot</a></td>
+<td>Plot results of bootstrap for QTL position</td></tr>
+<tr><td width="25%"><a href="plot.scanoneperm.html">plot.scanoneperm</a></td>
+<td>Plot permutation results for a single-QTL genome scan</td></tr>
+<tr><td width="25%"><a href="plot.scanPhyloQTL.html">plot.scanPhyloQTL</a></td>
+<td>Plot LOD curves from single-QTL scan to map QTL to a phylogenetic tree</td></tr>
+<tr><td width="25%"><a href="plot.scantwo.html">plot.scantwo</a></td>
+<td>Plot LOD scores for a two-dimensional genome scan</td></tr>
+<tr><td width="25%"><a href="plot.scantwoperm.html">plot.scantwoperm</a></td>
+<td>Plot permutation results for a 2d, 2-QTL genome scan</td></tr>
+<tr><td width="25%"><a href="plot.errorlod.html">plotErrorlod</a></td>
+<td>Plot grid of error LOD values</td></tr>
+<tr><td width="25%"><a href="plot.geno.html">plotGeno</a></td>
+<td>Plot observed genotypes, flagging likely errors</td></tr>
+<tr><td width="25%"><a href="plot.info.html">plotInfo</a></td>
+<td>Plot the proportion of missing genotype information</td></tr>
+<tr><td width="25%"><a href="plotLodProfile.html">plotLodProfile</a></td>
+<td>Plot 1-d LOD profiles for a multiple QTL model</td></tr>
+<tr><td width="25%"><a href="plot.map.html">plotMap</a></td>
+<td>Plot genetic map</td></tr>
+<tr><td width="25%"><a href="plot.missing.html">plotMissing</a></td>
+<td>Plot grid of missing genotypes</td></tr>
+<tr><td width="25%"><a href="plotModel.html">plotModel</a></td>
+<td>Plot a QTL model</td></tr>
+<tr><td width="25%"><a href="plot.pheno.html">plotPheno</a></td>
+<td>Plot a phenotype distribution</td></tr>
+<tr><td width="25%"><a href="plot.pxg.html">plotPXG</a></td>
+<td>Plot phenotypes versus marker genotypes</td></tr>
+<tr><td width="25%"><a href="plot.rf.html">plotRF</a></td>
+<td>Plot recombination fractions</td></tr>
+<tr><td width="25%"><a href="pull.argmaxgeno.html">pull.argmaxgeno</a></td>
+<td>Pull out the results of the Viterbi algorithm from a cross</td></tr>
+<tr><td width="25%"><a href="pull.draws.html">pull.draws</a></td>
+<td>Pull out the genotype imputations from a cross</td></tr>
+<tr><td width="25%"><a href="pull.geno.html">pull.geno</a></td>
+<td>Pull out the genotype data from a cross</td></tr>
+<tr><td width="25%"><a href="pull.genoprob.html">pull.genoprob</a></td>
+<td>Pull out the genotype probabilities from a cross</td></tr>
+<tr><td width="25%"><a href="pull.map.html">pull.map</a></td>
+<td>Pull out the genetic map from a cross</td></tr>
+<tr><td width="25%"><a href="pull.markers.html">pull.markers</a></td>
+<td>Drop all but a selected set of markers</td></tr>
+<tr><td width="25%"><a href="pull.pheno.html">pull.pheno</a></td>
+<td>Pull out phenotype data from a cross</td></tr>
+<tr><td width="25%"><a href="pull.rf.html">pull.rf</a></td>
+<td>Pull out recombination fractions or LOD scores from a cross object</td></tr>
+</table>
+
+<h2><a name="Q">-- Q --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="qtlversion.html">qtlversion</a></td>
+<td>Installed version of R/qtl</td></tr>
+</table>
+
+<h2><a name="R">-- R --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="c.scanoneperm.html">rbind.scanoneperm</a></td>
+<td>Combine data from scanone permutations</td></tr>
+<tr><td width="25%"><a href="c.scantwoperm.html">rbind.scantwoperm</a></td>
+<td>Combine data from scantwo permutations</td></tr>
+<tr><td width="25%"><a href="read.cross.html">read.cross</a></td>
+<td>Read data for a QTL experiment</td></tr>
+<tr><td width="25%"><a href="readMWril.html">readMWril</a></td>
+<td>Read data for 4- or 8-way RIL</td></tr>
+<tr><td width="25%"><a href="reduce2grid.html">reduce2grid</a></td>
+<td>Reduce to a grid of pseudomarkers.</td></tr>
+<tr><td width="25%"><a href="refineqtl.html">refineqtl</a></td>
+<td>Refine the positions of QTL</td></tr>
+<tr><td width="25%"><a href="reorderqtl.html">reorderqtl</a></td>
+<td>Reorder the QTL in a qtl object</td></tr>
+<tr><td width="25%"><a href="replace.map.html">replace.map</a></td>
+<td>Replace the genetic map of a cross</td></tr>
+<tr><td width="25%"><a href="replace.map.html">replacemap.cross</a></td>
+<td>Replace the genetic map of a cross</td></tr>
+<tr><td width="25%"><a href="replacemap.scanone.html">replacemap.scanone</a></td>
+<td>Replace the genetic map in QTL mapping results with an alternate map</td></tr>
+<tr><td width="25%"><a href="replacemap.scantwo.html">replacemap.scantwo</a></td>
+<td>Replace the genetic map in QTL mapping results with an alternate map</td></tr>
+<tr><td width="25%"><a href="replaceqtl.html">replaceqtl</a></td>
+<td>Replace a QTL in a qtl object with a different position</td></tr>
+<tr><td width="25%"><a href="rescalemap.html">rescalemap</a></td>
+<td>Rescale genetic maps</td></tr>
+<tr><td width="25%"><a href="ripple.html">ripple</a></td>
+<td>Compare marker orders</td></tr>
+</table>
+
+<h2><a name="S">-- S --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="scanone.html">scanone</a></td>
+<td>Genome scan with a single QTL model</td></tr>
+<tr><td width="25%"><a href="scanoneboot.html">scanoneboot</a></td>
+<td>Bootstrap to get interval estimate of QTL location</td></tr>
+<tr><td width="25%"><a href="scanPhyloQTL.html">scanPhyloQTL</a></td>
+<td>Single-QTL genome scan to map QTL to a phylogenetic tree</td></tr>
+<tr><td width="25%"><a href="scanqtl.html">scanqtl</a></td>
+<td>General QTL scan</td></tr>
+<tr><td width="25%"><a href="scantwo.html">scantwo</a></td>
+<td>Two-dimensional genome scan with a two-QTL model</td></tr>
+<tr><td width="25%"><a href="shiftmap.html">shiftmap</a></td>
+<td>Shift starting points in genetic maps</td></tr>
+<tr><td width="25%"><a href="sim.cross.html">sim.cross</a></td>
+<td>Simulate a QTL experiment</td></tr>
+<tr><td width="25%"><a href="sim.geno.html">sim.geno</a></td>
+<td>Simulate genotypes given observed marker data</td></tr>
+<tr><td width="25%"><a href="sim.map.html">sim.map</a></td>
+<td>Simulate a genetic map</td></tr>
+<tr><td width="25%"><a href="simFounderSnps.html">simFounderSnps</a></td>
+<td>Simulate founder SNPs for a multiple-strain RIL</td></tr>
+<tr><td width="25%"><a href="simPhyloQTL.html">simPhyloQTL</a></td>
+<td>Simulate a set of intercrosses for a single diallelic QTL</td></tr>
+<tr><td width="25%"><a href="simulateMissingData.html">simulatemissingdata</a></td>
+<td>Simulates missing genotype data</td></tr>
+<tr><td width="25%"><a href="stepwiseqtl.html">stepwiseqtl</a></td>
+<td>Stepwise selection for multiple QTL</td></tr>
+<tr><td width="25%"><a href="strip.partials.html">strip.partials</a></td>
+<td>Strip partially informative genotypes</td></tr>
+<tr><td width="25%"><a href="subset.cross.html">subset.cross</a></td>
+<td>Subsetting data for QTL experiment</td></tr>
+<tr><td width="25%"><a href="subset.map.html">subset.map</a></td>
+<td>Subsetting chromosomes for a genetic map</td></tr>
+<tr><td width="25%"><a href="subset.scanone.html">subset.scanone</a></td>
+<td>Subsetting the results of a genome scan</td></tr>
+<tr><td width="25%"><a href="subset.scanoneperm.html">subset.scanoneperm</a></td>
+<td>Subsetting permutation test results</td></tr>
+<tr><td width="25%"><a href="subset.scantwo.html">subset.scantwo</a></td>
+<td>Subsetting the results of a 2-d genome scan</td></tr>
+<tr><td width="25%"><a href="subset.scantwoperm.html">subset.scantwoperm</a></td>
+<td>Subsetting two-dimensional permutation test results</td></tr>
+<tr><td width="25%"><a href="summary.cross.html">summary.cross</a></td>
+<td>Print summary of QTL experiment</td></tr>
+<tr><td width="25%"><a href="summary.fitqtl.html">summary.fitqtl</a></td>
+<td>Summary of fit of qtl model</td></tr>
+<tr><td width="25%"><a href="summary.map.html">summary.map</a></td>
+<td>Print summary of a genetic map</td></tr>
+<tr><td width="25%"><a href="summary.qtl.html">summary.qtl</a></td>
+<td>Print summary of a QTL object</td></tr>
+<tr><td width="25%"><a href="summary.ripple.html">summary.ripple</a></td>
+<td>Print summary of ripple results</td></tr>
+<tr><td width="25%"><a href="summary.scanone.html">summary.scanone</a></td>
+<td>Summarize the results of a genome scans</td></tr>
+<tr><td width="25%"><a href="summary.scanoneboot.html">summary.scanoneboot</a></td>
+<td>Bootstrap confidence interval for QTL location</td></tr>
+<tr><td width="25%"><a href="summary.scanoneperm.html">summary.scanoneperm</a></td>
+<td>LOD thresholds from scanone permutation results</td></tr>
+<tr><td width="25%"><a href="summary.scanPhyloQTL.html">summary.scanPhyloQTL</a></td>
+<td>Summarize the results a genome scan to map a QTL to a phylogenetic tree</td></tr>
+<tr><td width="25%"><a href="summary.scantwo.html">summary.scantwo</a></td>
+<td>Summarize the results of a two-dimensional genome scan</td></tr>
+<tr><td width="25%"><a href="summary.scantwo.old.html">summary.scantwo.old</a></td>
+<td>Summarize the results of a two-dimensional genome scan</td></tr>
+<tr><td width="25%"><a href="summary.scantwoperm.html">summary.scantwoperm</a></td>
+<td>LOD thresholds from scantwo permutation results</td></tr>
+<tr><td width="25%"><a href="summary.map.html">summaryMap</a></td>
+<td>Print summary of a genetic map</td></tr>
+<tr><td width="25%"><a href="summary.scantwo.old.html">summaryScantwoOld</a></td>
+<td>Summarize the results of a two-dimensional genome scan</td></tr>
+<tr><td width="25%"><a href="switch.order.html">switch.order</a></td>
+<td>Switch the order of markers on a chromosome</td></tr>
+<tr><td width="25%"><a href="switchAlleles.html">switchAlleles</a></td>
+<td>Switch alleles at selected markers</td></tr>
+</table>
+
+<h2><a name="T">-- T --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="top.errorlod.html">top.errorlod</a></td>
+<td>List genotypes with large error LOD scores</td></tr>
+<tr><td width="25%"><a href="totmar.html">totmar</a></td>
+<td>Determine the total number of markers</td></tr>
+<tr><td width="25%"><a href="transformPheno.html">transformPheno</a></td>
+<td>Transformation of the phenotypes in a cross object</td></tr>
+<tr><td width="25%"><a href="tryallpositions.html">tryallpositions</a></td>
+<td>Test all possible positions for a marker</td></tr>
+<tr><td width="25%"><a href="typingGap.html">typingGap</a></td>
+<td>Maximum distance between genotyped markers</td></tr>
+</table>
+
+<h2><a name="W">-- W --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="write.cross.html">write.cross</a></td>
+<td>Write data for a QTL experiment to a file</td></tr>
+</table>
+
+<h2><a name="X">-- X --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="xaxisloc.scanone.html">xaxisloc.scanone</a></td>
+<td>Get x-axis locations in scanone plot</td></tr>
+</table>
+
+<h2><a name="misc">-- misc --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="arithscan.html">+.scanone</a></td>
+<td>Arithmetic operators for scanone and scantwo results</td></tr>
+<tr><td width="25%"><a href="arithscanperm.html">+.scanoneperm</a></td>
+<td>Arithmetic Operators for permutation results</td></tr>
+<tr><td width="25%"><a href="arithscan.html">+.scantwo</a></td>
+<td>Arithmetic operators for scanone and scantwo results</td></tr>
+<tr><td width="25%"><a href="arithscanperm.html">+.scantwoperm</a></td>
+<td>Arithmetic Operators for permutation results</td></tr>
+<tr><td width="25%"><a href="arithscan.html">-.scanone</a></td>
+<td>Arithmetic operators for scanone and scantwo results</td></tr>
+<tr><td width="25%"><a href="arithscanperm.html">-.scanoneperm</a></td>
+<td>Arithmetic Operators for permutation results</td></tr>
+<tr><td width="25%"><a href="arithscan.html">-.scantwo</a></td>
+<td>Arithmetic operators for scanone and scantwo results</td></tr>
+<tr><td width="25%"><a href="arithscanperm.html">-.scantwoperm</a></td>
+<td>Arithmetic Operators for permutation results</td></tr>
+<tr><td width="25%"><a href="subset.cross.html">[.cross</a></td>
+<td>Subsetting data for QTL experiment</td></tr>
+<tr><td width="25%"><a href="subset.map.html">[.map</a></td>
+<td>Subsetting chromosomes for a genetic map</td></tr>
+<tr><td width="25%"><a href="subset.scanoneperm.html">[.scanoneperm</a></td>
+<td>Subsetting permutation test results</td></tr>
+<tr><td width="25%"><a href="subset.scantwoperm.html">[.scantwoperm</a></td>
+<td>Subsetting two-dimensional permutation test results</td></tr>
+</table>
+</body></html>
