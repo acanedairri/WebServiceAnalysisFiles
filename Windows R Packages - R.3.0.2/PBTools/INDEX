@@ -89,6 +89,7 @@ diallel3Test            diallel3Test
 diallel3TestME          diallel3TestME
 diallel4Test            diallel4Test
 diallel4TestME          diallel4TestME
+displayErrMsg           Display Error Message
 doIM                    doIM
 doQTL_BIM               doQTL_BIM
 doQTL_CIM               doQTL_CIM
@@ -152,6 +153,7 @@ skewness                Coefficient of Skewness
 ssa.pairwise            ssa.pairwise
 ssa.resid               ssa.resid
 ssa.test                ssa.test
+ssaTestPrep             Single Site Analysis for p-rep design
 stability.analysis      stability.analysis
 stabilityTest           stabilityTest
 stdkurtosis             Standard Error of Kurtosis
