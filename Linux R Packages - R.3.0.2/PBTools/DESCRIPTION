@@ -11,5 +11,5 @@ Depends: R (>= 3.0.2), multcomp, stringr, doBy, splines, MASS, Matrix,
         lattice, leaps, plotrix, DiGGer, qtl, qtlbim
 License: GPL (>= 2)
 LazyLoad: yes
-Packaged: 2014-09-18 05:28:16 UTC; AGulles
-Built: R 3.0.2; ; 2014-09-19 02:34:29 UTC; unix
+Packaged: 2014-10-02 09:38:22 UTC; AGulles
+Built: R 3.0.2; ; 2014-10-07 06:12:20 UTC; unix
