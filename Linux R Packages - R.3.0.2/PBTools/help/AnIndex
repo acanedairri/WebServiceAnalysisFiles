@@ -93,6 +93,8 @@ diallel4Test	diallel4Test
 diallel4Test.default	diallel4Test
 diallel4TestME	diallel4TestME
 diallel4TestME.default	diallel4TestME
+displayErrMsg	displayErrMsg
+displayErrMsg.default	displayErrMsg
 doIM	doIM
 doIM.default	doIM
 doQTLanalysis	doQTLanalysis
@@ -170,6 +172,8 @@ graph.sea.diagplots	graph.sea.diagplots
 graph.sea.diagplots.default	graph.sea.diagplots
 GraphLine	GraphLine
 GraphLine.default	GraphLine
+graphSEAdiagplot	graphSEAdiagplot
+graphSEAdiagplot.default	graphSEAdiagplot
 Heatmap	Heatmap
 Heatmap.default	Heatmap
 is.valid.name	is.valid.name
@@ -269,6 +273,14 @@ ssa.resid	ssa.resid
 ssa.resid.default	ssa.resid
 ssa.test	ssa.test
 ssa.test.default	ssa.test
+ssaEstimateLSMeans	ssaTestPrep
+ssaModeling	ssaTestPrep
+ssaSpatialSED	ssaTestPrep
+ssaTestPrep	ssaTestPrep
+ssaTestPrep.default	ssaTestPrep
+ssaTestPrepMain	ssaTestPrep
+ssaTestPrepResid	ssaTestPrep
+ssaTestPrepSummary	ssaTestPrep
 stability.analysis	stability.analysis
 stability.analysis.default	stability.analysis
 stabilityTest	stabilityTest
