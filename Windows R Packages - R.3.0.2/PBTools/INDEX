@@ -124,6 +124,7 @@ graph.mea2s.diagplots   graph.mea2s.diagplots
 graph.mea2s.predint     graph.mea2s.predint
 graph.sea.boxhist       graph.sea.boxhist
 graph.sea.diagplots     graph.sea.diagplots
+graphSEAdiagplot        Diagnostic plot for single environment analysis
 is.valid.name           valid names
 is.wholenumber          Wholenumber
 isContrast              Is Contrast?

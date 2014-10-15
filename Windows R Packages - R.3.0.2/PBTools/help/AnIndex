@@ -172,6 +172,8 @@ graph.sea.diagplots	graph.sea.diagplots
 graph.sea.diagplots.default	graph.sea.diagplots
 GraphLine	GraphLine
 GraphLine.default	GraphLine
+graphSEAdiagplot	graphSEAdiagplot
+graphSEAdiagplot.default	graphSEAdiagplot
 Heatmap	Heatmap
 Heatmap.default	Heatmap
 is.valid.name	is.valid.name
@@ -277,6 +279,8 @@ ssaSpatialSED	ssaTestPrep
 ssaTestPrep	ssaTestPrep
 ssaTestPrep.default	ssaTestPrep
 ssaTestPrepMain	ssaTestPrep
+ssaTestPrepResid	ssaTestPrep
+ssaTestPrepSummary	ssaTestPrep
 stability.analysis	stability.analysis
 stability.analysis.default	stability.analysis
 stabilityTest	stabilityTest
