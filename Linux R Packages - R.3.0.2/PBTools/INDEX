@@ -73,11 +73,16 @@ css                     Corrected Sum of Squares
 cv                      Coefficient of Variation
 cvm.test                Cramer-von Mises test for normality
 designAlphaLattice      Alpha Lattice
+designAugmentedAlpha    Randomization for Augmented Alpha Lattice
+                        Design
 designAugmentedLSD      Augmented Design for Latin Square
 designAugmentedRCB      Augmented Design for Randomized Complete Block
+designAugmentedRowColumn
+                        Randomization for Augmented Row-Column Design
 designLSD               title1
 designLatinizedAlpha    Latinized Alpha Design
 designLatinizedRowCol   Latinized Row-Column
+designPRep              Randomization for p-Rep Design
 designRCBD              Randomization for Randomized Complete Block
                         Design
 designRowColumn         design Row-Column
