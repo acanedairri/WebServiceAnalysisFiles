@@ -76,7 +76,8 @@ designAlphaLattice      Alpha Lattice
 designAugmentedAlpha    Randomization for Augmented Alpha Lattice
                         Design
 designAugmentedLSD      Augmented Design for Latin Square
-designAugmentedRCB      Augmented Design for Randomized Complete Block
+designAugmentedRCB      Randomization for Augmented Randomized Complete
+                        Block Design
 designAugmentedRowColumn
                         Randomization for Augmented Row-Column Design
 designLSD               title1
