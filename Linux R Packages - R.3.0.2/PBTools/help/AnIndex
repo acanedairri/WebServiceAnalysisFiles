@@ -57,6 +57,8 @@ cv	cv
 cv.data.frame	cv
 cv.default	cv
 cvm.test	cvm.test
+data1_merge	data1_merge
+data2_merge	data2_merge
 DataAttribute	DataAttribute
 DataAttribute.default	DataAttribute
 DescriptiveStatistics	DescriptiveStatistics
@@ -99,6 +101,10 @@ diallel4Test	diallel4Test
 diallel4Test.default	diallel4Test
 diallel4TestME	diallel4TestME
 diallel4TestME.default	diallel4TestME
+Diallel_M1	Diallel_M1
+Diallel_M2	Diallel_M2
+Diallel_M3	Diallel_M3
+Diallel_M4	Diallel_M4
 displayErrMsg	displayErrMsg
 displayErrMsg.default	displayErrMsg
 doIM	doIM
@@ -127,6 +133,8 @@ factor.list	factor.list
 FactorList	FactorList
 FactorList.default	FactorList
 fCovariances	fCovariances
+FinlayStability	FinlayStability
+FinlayStability.default	FinlayStability
 formatAnovaTable	formatAnovaTable
 formatAnovaTable.default	formatAnovaTable
 formatNumericValue	formatNumericValue
@@ -140,6 +148,8 @@ generationMean.test	generationMean.test
 generationMean.test.default	generationMean.test
 generationMeanSummaryStats.test	generationMeanSummaryStats.test
 generationMeanSummaryStats.test.default	generationMeanSummaryStats.test
+GenMean_raw	GenMean_raw
+GenMean_summaryStats	GenMean_summaryStats
 genoNpheno.corr	genoNpheno.corr
 genoNpheno.corr.default	genoNpheno.corr
 GEOneStage.test	GEOneStage.test
@@ -225,6 +235,9 @@ nc3Test	nc3Test
 nc3Test.default	nc3Test
 nc3TestME	nc3TestME
 nc3TestME.default	nc3TestME
+NCIII_ME	NCIII_ME
+NCII_ME	NCII_ME
+NCI_ME	NCI_ME
 NonLinearRegression	NonLinearRegression
 NonLinearRegression.default	NonLinearRegression
 NormalityTest	NormalityTest
@@ -250,6 +263,8 @@ QTL.dataprep	QTL.dataprep
 QTL.dataprep.default	QTL.dataprep
 QTLDataPrep	QTLDataPrep
 QTLDataPrep.default	QTLDataPrep
+QTL_pheno	QTL_pheno
+QTL_pred_height	QTL_pred_height
 RCB_Multi	RCB_Multi
 Read	Read
 ReadMarkers	ReadMarkers
@@ -266,6 +281,10 @@ se.kurtosis	stdkurtosis
 se.mean	stdmean
 se.skewness	stdskewness
 sf.test	sf.test
+ShuklaStability	ShuklaStability
+ShuklaStability.default	ShuklaStability
+SI_markers	SI_markers
+SI_traits	SI_traits
 skew	skewness
 skewness	skewness
 skewness.data.frame	skewness
@@ -287,8 +306,6 @@ ssaTestPrep.default	ssaTestPrep
 ssaTestPrepMain	ssaTestPrep
 ssaTestPrepResid	ssaTestPrep
 ssaTestPrepSummary	ssaTestPrep
-stability.analysis	stability.analysis
-stability.analysis.default	stability.analysis
 stabilityTest	stabilityTest
 stabilityTest.default	stabilityTest
 Stan	Stan
@@ -314,6 +331,7 @@ ttcTest	ttcTest
 ttcTest.default	ttcTest
 ttcTestME	ttcTestME
 ttcTestME.default	ttcTestME
+TTC_ME	TTC_ME
 Two_stage	Two_stage
 ucss	ucss
 ucss.data.frame	ucss

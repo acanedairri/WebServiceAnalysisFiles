@@ -10,13 +10,20 @@ ConstructVarCorrTable   Construct Var-Corr Table
 CovMol                  CovMol
 DataAttribute           Dataset Attribute
 DescriptiveStatistics   Descriptive Statistics
+Diallel_M1              Diallel_M1
+Diallel_M2              Diallel_M2
+Diallel_M3              Diallel_M3
+Diallel_M4              Diallel_M4
 ESIMIndex_2             ESIMIndex_2
 FactorList              title1
+FinlayStability         Finlay-Wilkinson Stability Analysis
 GEOneStage.test         GEOneStage.test
 GEOneStage_resid        GEOneStage_resid
 GETwoStage.dataRecode   GETwoStage.dataRecode
 GETwoStage.test         GETwoStage.test
 GETwoStage_resid        GETwoStage_resid
+GenMean_raw             GenMean_raw
+GenMean_summaryStats    GenMean_summaryStats
 GenerateFactor          title1
 GraphLine               GraphLine
 Heatmap                 Heatmap
@@ -30,6 +37,9 @@ MESIMIndex_2            MESIMIndex_2
 MQ.marker.diag          MQ.marker.diag
 Means                   Means
 MergeData               Merge Dataset
+NCIII_ME                NCIII_ME
+NCII_ME                 NCII_ME
+NCI_ME                  NCI_ME
 NonLinearRegression     Non-Linear Regeression
 NormalityTest           Test for Normality
 OutlierDetection        Outlier Detection
@@ -37,6 +47,8 @@ PBTools-package         Plant Breeding Tools
 QTL.analysis            QTL.analysis
 QTL.dataprep            QTL.dataprep
 QTLDataPrep             QTLDataPrep
+QTL_pheno               QTL_pheno
+QTL_pred_height         QTL_pred_height
 RCB_Multi               RCB_Multi
 RESIMIndex_2            RESIMIndex_2
 Read                    Read
@@ -45,9 +57,13 @@ ReadQTL                 ReadQTL
 Readrest                Readrest
 Readsgn                 Readsgn
 Readwgt                 Readwgt
+SI_markers              SI_markers
+SI_traits               SI_traits
+ShuklaStability         Shukla Stability Analysis
 SmithIndex_2            SmithIndex_2
 SortCases               SortCases
 Stan                    Stan
+TTC_ME                  TTC_ME
 ToLong                  title1
 ToWide                  title1
 TraitsSelect            TraitsSelect
@@ -72,6 +88,8 @@ createQTLdata           createQTLdata
 css                     Corrected Sum of Squares
 cv                      Coefficient of Variation
 cvm.test                Cramer-von Mises test for normality
+data1_merge             data1_merge
+data2_merge             data2_merge
 designAlphaLattice      Alpha Lattice
 designAugmentedAlpha    Randomization for Augmented Alpha Lattice
                         Design
@@ -161,7 +179,6 @@ ssa.pairwise            ssa.pairwise
 ssa.resid               ssa.resid
 ssa.test                ssa.test
 ssaTestPrep             Single Site Analysis for p-rep design
-stability.analysis      stability.analysis
 stabilityTest           stabilityTest
 stdkurtosis             Standard Error of Kurtosis
 stdmean                 Standard Error of the Mean
