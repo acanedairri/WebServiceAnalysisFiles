@@ -19,6 +19,8 @@ ANOVA	ANOVA
 ANOVA.default	ANOVA
 AppendData	AppendData
 AppendData.default	AppendData
+basicPower	bcPower
+bcPower	bcPower
 BivariateCorrelationTest	BivariateCorrelationTest
 BivariateCorrelationTest.default	BivariateCorrelationTest
 bptest	bptest
@@ -30,8 +32,12 @@ checkQTLdata	checkQTLdata
 checkQTLdata.default	checkQTLdata
 class.information	class.information
 class.information.default	class.information
+coef	coef.powerTransform
+coef.powerTransform	coef.powerTransform
 coefKurtosis	kurtosis
 coefVar	cv
+CombineFactorLevels	CombineFactorLevels
+CombineFactorLevels.default	CombineFactorLevels
 compareControlContrast	contrastAnalysisUtilities
 compareControlContrast.default	contrastAnalysisUtilities
 compareGenotypes	compareGenotypes
@@ -61,6 +67,8 @@ data1_merge	data1_merge
 data2_merge	data2_merge
 DataAttribute	DataAttribute
 DataAttribute.default	DataAttribute
+DataTransformation	DataTransformation
+DataTransformation.default	DataTransformation
 DescriptiveStatistics	DescriptiveStatistics
 DescriptiveStatistics.default	DescriptiveStatistics
 designAlphaLattice	designAlphaLattice
@@ -128,6 +136,7 @@ estimateMissingData	estimateMissingData
 estimateMissingData.default	estimateMissingData
 estimateNA	estimateNA
 estimateNA.default	estimateNA
+estimateTransform	estimateTransform
 fac.gen	fac.gen
 factor.list	factor.list
 FactorList	FactorList
@@ -249,7 +258,14 @@ OutlierDetectionMethod2	OutlierDetection
 OutlierGraph2	OutlierDetection
 OutlierGraph2Sub	OutlierDetection
 PBTools	PBTools-package
+plot.powerTransform	plot.powerTransform
+powerTransform	powerTransform
+powerTransform.default	powerTransform
+powerTransform.formula	powerTransform
+powerTransform.lm	powerTransform
 print.durbinWatsonTest	durbinWatsonTest
+print.powerTransform	print.powerTransform
+print.summary.powerTransform	print.powerTransform
 printAOVTable	printAOVTable
 printAOVTable.default	printAOVTable
 printCorrMatrix	printCorrMatrix
@@ -318,8 +334,11 @@ stdmean.default	stdmean
 stdskewness	stdskewness
 stdskewness.data.frame	stdskewness
 stdskewness.default	stdskewness
+summary.powerTransform	summary.powerTransform
 testQTLsegregation	testQTLsegregation
 testQTLsegregation.default	testQTLsegregation
+testTransform	testTransform
+testTransform.powerTransform	testTransform
 ToLong	ToLong
 ToLong.default	ToLong
 ToWide	ToWide
@@ -338,5 +357,7 @@ ucss.data.frame	ucss
 ucss.default	ucss
 userDefContrast	contrastAnalysisUtilities
 userDefContrast.default	contrastAnalysisUtilities
+vcov.powerTransform	vcov.powerTransform
 vif	vif
 vif.lm	vif
+yjPower	bcPower

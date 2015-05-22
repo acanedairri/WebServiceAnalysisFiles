@@ -5,10 +5,12 @@ AggregateData           Aggregate Data
 AppendData              Append Data
 BivariateCorrelationTest
                         Test of Association between two variables
+CombineFactorLevels     Combine Factor Levels
 ConstructAOVTable       Construct the ANOVA Table
 ConstructVarCorrTable   Construct Var-Corr Table
 CovMol                  CovMol
 DataAttribute           Dataset Attribute
+DataTransformation      title1
 DescriptiveStatistics   Descriptive Statistics
 Diallel_M1              Diallel_M1
 Diallel_M2              Diallel_M2
@@ -75,11 +77,13 @@ allFactors              allFactors
 allPossibleReg          All Possible Regression
 ammi.analysis           ammi.analysis
 ammi.analysis2          ammi.analysis2
+bcPower                 Box-Cox and Yeo-Johnson Power Transformations
 bptest                  Breusch-Pagan Test
 checkGenoError          checkGenoError
 checkMarkerOrder        checkMarkerOrder
 checkQTLdata            checkQTLdata
 class.information       class.information
+coef                    title1
 compareGenotypes        compareGenotypes
 confint2                confint2
 contrastAnalysis        Contrast Analysis
@@ -123,6 +127,8 @@ doQTLanalysis           doQTLanalysis
 durbinWatsonTest        Durbin-Watson Test for Autocorrelated Errors
 estimateMissingData     estimateMissingData
 estimateNA              estimateNA
+estimateTransform       Finding Univariate or Multivariate Power
+                        Transformations
 fCovariances            fCovariances
 fac.gen                 fac.gen
 factor.list             factor.list
@@ -167,6 +173,10 @@ nc2Test                 nc2Test
 nc2TestME               nc2TestME
 nc3Test                 nc3Test
 nc3TestME               nc3TestME
+plot.powerTransform     plot Method for powerTransform Objects
+powerTransform          Finding Univariate or Multivariate Power
+                        Transformations
+print.powerTransform    print
 printAOVTable           title1
 printCorrMatrix         Print Correlation Matrix
 printDataFrame          Print Data Frames
@@ -183,9 +193,14 @@ stabilityTest           stabilityTest
 stdkurtosis             Standard Error of Kurtosis
 stdmean                 Standard Error of the Mean
 stdskewness             Standard Error of Skewness
+summary.powerTransform
+                        title1
 testQTLsegregation      testQTLsegregation
+testTransform           Likelihood-Ratio Tests for Univariate or
+                        Multivariate Power Transformations to Normality
 trimStrings             trimStrings
 ttcTest                 ttcTest
 ttcTestME               ttcTestME
 ucss                    Uncorrected Sum of Squares
+vcov.powerTransform     title1
 vif                     Variance Inflation Factors

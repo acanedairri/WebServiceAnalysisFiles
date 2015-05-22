@@ -2,14 +2,14 @@ Package: PBTools
 Type: Package
 Title: Plant Breeding Tools
 Version: 1.5
-Date: 2015-03-10
+Date: 2015-04-23
 Author: Rose Imee Zhella A. Morantte and Nellwyn L. Sales with contributions from Ms. Violeta I. Bartolome, Ms. Leilani A. Nora, Ms. Alaine A. Gulles and Dr. Guoyou Ye of International Rice Research Institute
 Maintainer: Rose Imee Zhella A. Morantte <r.morantte@irri.org> and
         Alaine A. Gulles <a.gulles@irri.org>
 Description: Statistical Analysis for Plant Breeding
-Depends: R (>= 3.0.2), multcomp, stringr, doBy, splines, MASS, Matrix,
+Depends: R (>= 3.0.2), multcomp, stringr, splines, MASS, Matrix,
         lattice, leaps, plotrix, DiGGer, qtl, qtlbim, ape, gdata
 License: GPL (>= 2)
 LazyLoad: yes
-Packaged: 2015-04-22 06:41:23 UTC; AGulles
-Built: R 3.0.2; ; 2015-04-22 06:41:56 UTC; unix
+Packaged: 2015-05-19 08:03:23 UTC; AGulles
+Built: R 3.0.2; ; 2015-05-19 08:42:08 UTC; unix
